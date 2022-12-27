@@ -1,4 +1,6 @@
 backtrader
 matplotlib
 panda
-yfinance    
+yfinance
+wheel
+ta-lib    
