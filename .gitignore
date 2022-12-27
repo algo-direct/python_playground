@@ -2,5 +2,4 @@
 env/*
 logs/*
 yfinance.cache
-data/*
 drive_md.sqlite.db
