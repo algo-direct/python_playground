@@ -1,5 +1,7 @@
 .ipynb_checkpoints
 env/*
 logs/*
+data/*
+db/*
 yfinance.cache
 drive_md.sqlite.db

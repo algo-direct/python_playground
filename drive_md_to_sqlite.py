@@ -22,7 +22,6 @@ from zipfile import ZipFile
 import csv
 import time
 from io import StringIO
-from line_profiler import LineProfiler
 import cProfile, pstats
 from pstats import SortKey
 import psutil
