@@ -1,3 +1,4 @@
+pip3 install bokeh==2.4.3
 pip3 install backtrader
 pip3 install matplotlib
 pip3 install panda
