@@ -2,11 +2,11 @@
 # coding: utf-8
 
 import sys
-from datetime import datetime
+import datetime
 import logging
 import os
 
-logfile = f"logs/{sys.argv[0]}_{datetime.now().strftime('%Y_%m_%d_%H_%M_%S')}.log"
+logfile = f"logs/{sys.argv[0]}_{datetime.datetime.now().strftime('%Y_%m_%d_%H_%M_%S')}.log"
 logging.basicConfig(
     filename=logfile,
     encoding="utf-8",
@@ -32,38 +32,33 @@ if len(sys.argv) > 3:
     MAX_ROWS_PER_INSERT = int(sys.argv[3])
 process = psutil.Process(os.getpid())
 
+one_minute_delta = datetime.timedelta(minutes=1)
+
 
 class SymbolDBWriter:  # writes one and only one symbol
     def __init__(self, symbol) -> None:
         self.symbol = symbol
         self.pending_rows = []
-        self.connection = None
+        self.file_handle = None
 
-    def connect_to_DB(self):
-        if self.connection:
+    def close_csv_file(self):
+        if self.file_handle:
+            self.file_handle.flush()
+            self.file_handle.close()
+            self.file_handle = None
+
+    def open_csv_file(self):
+        if self.file_handle:
             return
         symbol = self.symbol
-        db_file = f"db/drive_md_{symbol}.sqlite.db"
-        logging.info(f"Opening connection for symbol: {symbol}, DB file:{db_file}")
-        self.connection = sqlite3.connect(db_file)
-        cursor = self.connection.cursor()
-        try:
-            cursor.execute(
-                "CREATE TABLE drive_md_oneminute(Timestamp DATETIME PRIMARY KEY, Open REAL, Low REAL, High REAL, Close REAL, Volumne INT, OI INT);"
-            )
-            cursor.execute(
-                """
-            PRAGMA journal_mode = OFF;
-            PRAGMA synchronous = 0;
-            PRAGMA cache_size = 1000000;
-            PRAGMA locking_mode = EXCLUSIVE;
-            PRAGMA temp_store = MEMORY;
-            """
-            )
-        except:
-            pass
-        self.connection.commit()
-        self.cursor = self.connection.cursor()
+        csv_file_name = f"csv/{symbol}.csv"
+        if not os.path.exists(csv_file_name):
+            logging.info(f"Creating csv file for symbol: {symbol}, file:{csv_file_name}")
+            self.file_handle = open(csv_file_name, "a")
+            self.file_handle.write("Timestamp,Open,Low,High,Close,Volumne,OI" + os.linesep)
+        else:
+            logging.info(f"Opening csv file for symbol: {symbol}, file:{csv_file_name}")
+            self.file_handle = open(csv_file_name, "a")
 
     def log_stats(self, pr, tag):
         pr.disable()
@@ -74,83 +69,46 @@ class SymbolDBWriter:  # writes one and only one symbol
         logging.info(f"tag: {tag}, Profile Stats:{s.getvalue()}")
 
     def write(self, rows):
-        self.connect_to_DB()
-        pr = cProfile.Profile()
-        pr.enable()
-
-        is_executemany_failed = False
-        try:
-            self.cursor.executemany(
-                "INSERT INTO drive_md_oneminute(Timestamp, Open, Low, High, Close, Volumne, OI) values (?, ?, ?, ?, ?, ?, ?)",
-                [
-                    (
-                        datetime(
-                            int(row[1][0:4]),
-                            int(row[1][4:6]),
-                            int(row[1][6:8]),
-                            hour=int(row[2][0:2]),
-                            minute=int(row[2][3:5]),
-                            second=0,
-                            microsecond=0,
-                        ),
-                        row[3],
-                        row[4],
-                        row[5],
-                        row[6],
-                        row[7],
-                        row[8] if len(row) > 8 else 0,
-                    )
-                    for row in rows
-                ],
-            )
-        except Exception as ex:
-            if not str(ex).startswith("UNIQUE"):
-                logging.exception(
-                    "executemany_failed --"  # f"zip file:{filename}, file:{file}, year:{year}, month:{month}"
-                )
-                is_executemany_failed = True
-                self.log_stats(pr, f"executemany_failed_{len(rows)}_rows")
-                # sys.exit(0)
-        if not is_executemany_failed:
-            self.connection.commit()
-            self.cursor = self.connection.cursor()
-            self.log_stats(pr, f"executemany_success_{len(rows)}_rows")
-            return
-        pr = cProfile.Profile()
-        pr.enable()
-
+        self.open_csv_file()
+        # pr = cProfile.Profile()
+        # pr.enable()
+        buf = ""
         for row in rows:
-            try:
-                self.cursor.execute(
-                    "INSERT INTO drive_md_oneminute(Timestamp, Open, Low, High, Close, Volumne, OI) values (?, ?, ?, ?, ?, ?, ?)",
-                    (
-                        datetime(
-                            int(row[1][0:4]),
-                            int(row[1][4:6]),
-                            int(row[1][6:8]),
-                            hour=int(row[2][0:2]),
-                            minute=int(row[2][3:5]),
-                            second=0,
-                            microsecond=0,
-                        ),
-                        row[3],
-                        row[4],
-                        row[5],
-                        row[6],
-                        row[7],
-                        row[8] if len(row) > 8 else 0,
-                    ),
-                )
-                # rows_inserted += 1
-            except Exception as ex:
-                if not str(ex).startswith("UNIQUE"):
-                    logging.exception(
-                        "--"  # f"zip file:{filename}, file:{file}, year:{year}, month:{month}"
+            hour = int(row[2][0:2])
+            minute = int(row[2][3:5])
+            if hour == 9 and minute == 8:
+                continue
+            if hour >= 15 and minute > 30:
+                continue
+            buf += (
+                str(
+                    datetime.datetime(
+                        int(row[1][0:4]),
+                        int(row[1][4:6]),
+                        int(row[1][6:8]),
+                        hour=hour,
+                        minute=minute,
+                        second=0,
+                        microsecond=0,
                     )
-                    # sys.exit(0)
-        self.connection.commit()
-        self.cursor = self.connection.cursor()
-        self.log_stats(pr, f"execute_one_by_one_{len(rows)}_rows")
+                    - one_minute_delta
+                )
+                + ","
+                + row[3]
+                + ","
+                + row[4]
+                + ","
+                + row[5]
+                + ","
+                + row[6]
+                + ","
+                + row[7]
+                + ","
+                + (row[8] if len(row) > 8 else "0")
+                + os.linesep
+            )
+        self.file_handle.write(buf)
+        # self.log_stats(pr, f"write_csv_success_{len(rows)}_rows")
 
 
 class DBWriter:  # Writes rows for multiple thread but one one thread should call member function after construction
@@ -167,8 +125,10 @@ class DBWriter:  # Writes rows for multiple thread but one one thread should cal
         self.thread.start()
 
     def stop(self):
-        self.stop_flag = True
-        self.condition.notify()
+        with self.lock:
+            self.stop_flag = True
+        with self.condition:
+            self.condition.notify()
 
     def stop_and_wait(self):
         self.stop()
@@ -213,11 +173,13 @@ class DBWriter:  # Writes rows for multiple thread but one one thread should cal
                         symbolDBWriter.pending_rows = symbolDBWriter.pending_rows[rows_to_add:]
                 if len(db_writers_with_pending_rows) == 0:
                     if self.stop_flag:
+                        for _, symbolDBWriter in self.symbolDBWriters.items():
+                            symbolDBWriter.close_csv_file()
                         break
                     else:
                         logging.info("Wating for condition")
                         # wait to be notified
-                        self.condition.wait()
+                        self.condition.wait(timeout=10)
                         logging.info("Wating for condition DONE")
                         continue
             # now self.lock is unlocked
@@ -226,7 +188,7 @@ class DBWriter:  # Writes rows for multiple thread but one one thread should cal
                 logging.info(
                     f"Added {len(next_job['pending_rows'])} rows for symbol: {next_job['symbolDBWriter'].symbol} by DBwriter: {self.id}"
                 )
-                rows_inserted = len(next_job["pending_rows"])
+                rows_inserted += len(next_job["pending_rows"])
                 next_job["symbolDBWriter"].write(next_job["pending_rows"])
             with self.lock:
                 self.total_pending_rows -= rows_inserted
