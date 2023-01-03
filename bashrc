@@ -124,7 +124,11 @@ fi
 alias glg="git log --pretty=format:'%C(yellow)%h %C(cyan)%ad %Cgreen%d %Creset%s' --date=relative -n10"
 alias gbr="git branch"
 alias gt="git status"
+alias gcbr="git rev-parse --abbrev-ref HEAD"
+alias gpobr="git push origin `gcbr`"
+alias gadd="git add -v "
 
+alias activate_venv="source env/bin/activate"
 
 
 alias v="vim"
