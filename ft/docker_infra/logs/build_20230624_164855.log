@@ -1,0 +1,290 @@
+#1 [internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.1s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 453B 0.0s done
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/node:20.1.0-bullseye
+#3 DONE 11.6s
+
+#4 [1/4] FROM docker.io/library/node:20.1.0-bullseye@sha256:0efc3ef3fea2822c9d16da084c40181ed7f74b6f45141100580f9887ccc8e9a1
+#4 DONE 0.0s
+
+#5 [3/4] RUN apt-get update
+#5 CACHED
+
+#6 [2/4] WORKDIR /app
+#6 CACHED
+
+#7 [4/4] RUN apt-get install -y build-essential cmake git openssh-server gdb pkg-config valgrind systemd-coredump
+#7 CACHED
+
+#8 exporting to image
+#8 exporting layers done
+#8 writing image sha256:520fbe4956f762f320ef365b50d55a9ff78780d770ee8cb7f7e76feedb3ca8ef 0.0s done
+#8 naming to docker.io/library/base_os:0.0.1 0.0s done
+#8 DONE 0.0s
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 3.76kB done
+#1 DONE 0.0s
+
+#2 [internal] load .dockerignore
+#2 transferring context: 2B done
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/base_os:0.0.1
+#3 DONE 0.0s
+
+#4 [ 1/77] FROM docker.io/library/base_os:0.0.1
+#4 DONE 0.0s
+
+#5 [27/77] RUN npm --global --loglevel info install browserify
+#5 CACHED
+
+#6 [ 8/77] RUN npm --global --loglevel info install restify
+#6 CACHED
+
+#7 [60/77] RUN npm --global --loglevel info install rxjs
+#7 CACHED
+
+#8 [10/77] RUN npm --global --loglevel info install gulp
+#8 CACHED
+
+#9 [16/77] RUN npm --global --loglevel info install grunt
+#9 CACHED
+
+#10 [66/77] RUN npm --global --loglevel info install eslint-plugin-react
+#10 CACHED
+
+#11 [13/77] RUN npm --global --loglevel info install async
+#11 CACHED
+
+#12 [44/77] RUN npm --global --loglevel info install bunyan
+#12 CACHED
+
+#13 [ 6/77] RUN npm --global --loglevel info install morgan
+#13 CACHED
+
+#14 [59/77] RUN npm --global --loglevel info install totp
+#14 CACHED
+
+#15 [70/77] RUN npm --global --loglevel info install ejs
+#15 CACHED
+
+#16 [39/77] RUN npm --global --loglevel info install moment
+#16 CACHED
+
+#17 [73/77] RUN npm --global --loglevel info install vue-router
+#17 CACHED
+
+#18 [76/77] RUN npm --global --loglevel info install cookie-parser
+#18 CACHED
+
+#19 [33/77] RUN npm --global --loglevel info install sqlite
+#19 CACHED
+
+#20 [ 7/77] RUN npm --global --loglevel info install nodemon
+#20 CACHED
+
+#21 [46/77] RUN npm --global --loglevel info install flat
+#21 CACHED
+
+#22 [58/77] RUN npm --global --loglevel info install uuid
+#22 CACHED
+
+#23 [74/77] RUN npm --global --loglevel info install chokidar
+#23 CACHED
+
+#24 [42/77] RUN npm --global --loglevel info install body-parser
+#24 CACHED
+
+#25 [56/77] RUN npm --global --loglevel info install glob
+#25 CACHED
+
+#26 [19/77] RUN npm --global --loglevel info install react
+#26 CACHED
+
+#27 [24/77] RUN npm --global --loglevel info install sharp
+#27 CACHED
+
+#28 [69/77] RUN npm --global --loglevel info install fs
+#28 CACHED
+
+#29 [12/77] RUN npm --global --loglevel info install agenda
+#29 CACHED
+
+#30 [55/77] RUN npm --global --loglevel info install mkdirp
+#30 CACHED
+
+#31 [11/77] RUN npm --global --loglevel info install molecular
+#31 CACHED
+
+#32 [65/77] RUN npm --global --loglevel info install eslint-plugin-import
+#32 CACHED
+
+#33 [30/77] RUN npm --global --loglevel info install uglifyjs2
+#33 CACHED
+
+#34 [50/77] RUN npm --global --loglevel info install react-dom
+#34 CACHED
+
+#35 [49/77] RUN npm --global --loglevel info install compression
+#35 CACHED
+
+#36 [48/77] RUN npm --global --loglevel info install helmet
+#36 CACHED
+
+#37 [51/77] RUN npm --global --loglevel info install fs-extra
+#37 CACHED
+
+#38 [ 9/77] RUN npm --global --loglevel info install nodemailer
+#38 CACHED
+
+#39 [21/77] RUN npm --global --loglevel info install dotenv
+#39 CACHED
+
+#40 [38/77] RUN npm --global --loglevel info install jsdom
+#40 CACHED
+
+#41 [ 2/77] RUN npm set progress=true
+#41 CACHED
+
+#42 [18/77] RUN npm --global --loglevel info install socket.io
+#42 CACHED
+
+#43 [15/77] RUN npm --global --loglevel info install grunt-cli
+#43 CACHED
+
+#44 [37/77] RUN npm --global --loglevel info install graphicsmagick
+#44 CACHED
+
+#45 [63/77] RUN npm --global --loglevel info install file-loader
+#45 CACHED
+
+#46 [57/77] RUN npm --global --loglevel info install yargs
+#46 CACHED
+
+#47 [43/77] RUN npm --global --loglevel info install husky
+#47 CACHED
+
+#48 [ 3/77] RUN npm --global --loglevel info install express
+#48 CACHED
+
+#49 [23/77] RUN npm --global --loglevel info install winston
+#49 CACHED
+
+#50 [32/77] RUN npm --global --loglevel info install pug
+#50 CACHED
+
+#51 [28/77] RUN npm --global --loglevel info install bower
+#51 CACHED
+
+#52 [35/77] RUN npm --global --loglevel info install angular
+#52 CACHED
+
+#53 [53/77] RUN npm --global --loglevel info install vue
+#53 CACHED
+
+#54 [20/77] RUN npm --global --loglevel info install redux
+#54 CACHED
+
+#55 [ 4/77] RUN npm --global --loglevel info install lodash
+#55 CACHED
+
+#56 [25/77] RUN npm --global --loglevel info install puppeteer
+#56 CACHED
+
+#57 [72/77] RUN npm --global --loglevel info install vue
+#57 CACHED
+
+#58 [29/77] RUN npm --global --loglevel info install underscore
+#58 CACHED
+
+#59 [41/77] RUN npm --global --loglevel info install debug
+#59 CACHED
+
+#60 [ 5/77] RUN npm --global --loglevel info install eslint
+#60 CACHED
+
+#61 [45/77] RUN npm --global --loglevel info install debug
+#61 CACHED
+
+#62 [67/77] RUN npm --global --loglevel info install url-loader
+#62 CACHED
+
+#63 [75/77] RUN npm --global --loglevel info install mime
+#63 CACHED
+
+#64 [61/77] RUN npm --global --loglevel info install redux
+#64 CACHED
+
+#65 [64/77] RUN npm --global --loglevel info install handlebars
+#65 CACHED
+
+#66 [36/77] RUN npm --global --loglevel info install marked
+#66 CACHED
+
+#67 [54/77] RUN npm --global --loglevel info install tslib
+#67 CACHED
+
+#68 [40/77] RUN npm --global --loglevel info install chalk
+#68 CACHED
+
+#69 [22/77] RUN npm --global --loglevel info install passport
+#69 CACHED
+
+#70 [14/77] RUN npm --global --loglevel info install axios
+#70 CACHED
+
+#71 [34/77] RUN npm --global --loglevel info install webpack
+#71 CACHED
+
+#72 [31/77] RUN npm --global --loglevel info install hapi
+#72 CACHED
+
+#73 [62/77] RUN npm --global --loglevel info install object-assign
+#73 CACHED
+
+#74 [47/77] RUN npm --global --loglevel info install json5
+#74 CACHED
+
+#75 [71/77] RUN npm --global --loglevel info install superagent
+#75 CACHED
+
+#76 [17/77] RUN npm --global --loglevel info install pm2
+#76 CACHED
+
+#77 [26/77] RUN npm --global --loglevel info install request
+#77 CACHED
+
+#78 [68/77] RUN npm --global --loglevel info install ws
+#78 CACHED
+
+#79 [52/77] RUN npm --global --loglevel info install moment
+#79 CACHED
+
+#80 [77/77] RUN npm --global --loglevel info install speakeasy
+#80 CACHED
+
+#81 exporting to image
+#81 exporting layers done
+#81 writing image sha256:8ca7b37c4d39af5dd20644943b4acd3124874863a458e535c42e84061ae2f948 done
+#81 naming to docker.io/library/base_node_js:0.0.1 0.0s done
+#81 DONE 0.0s
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 80B 0.0s done
+#1 DONE 0.1s
+
+#2 [internal] load .dockerignore
+#2 transferring context: 2B done
+#2 DONE 0.1s
+Dockerfile:2
+--------------------
+   1 |     
+   2 | >>> FROM base_python:$base_python_latest_tag
+   3 |     
+   4 |     
+--------------------
+ERROR: failed to solve: failed to parse stage name "base_python:": invalid reference format

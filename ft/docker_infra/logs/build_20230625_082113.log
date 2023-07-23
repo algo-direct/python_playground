@@ -1,0 +1,192 @@
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 735B done
+#1 DONE 0.0s
+
+#2 [internal] load .dockerignore
+#2 transferring context: 2B done
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/base_python:0.0.1
+#3 DONE 0.0s
+
+#4 [1/9] FROM docker.io/library/base_python:0.0.1
+#4 DONE 0.0s
+
+#5 [3/9] RUN npm --global --loglevel info install sha256
+#5 CACHED
+
+#6 [7/9] RUN npm --global --loglevel info install totp-generator
+#6 CACHED
+
+#7 [2/9] RUN npm --global --loglevel info install crypto
+#7 CACHED
+
+#8 [4/9] RUN npm --global --loglevel info install eslint-config-standard-with-typescript  @typescript-eslint/eslint-plugin@^5.50.0 eslint@^8.0.1 eslint-plugin-import@^2.25.2 eslint-plugin-n@^15.0.0 eslint-plugin-promise@^6.0.0 typescript
+#8 CACHED
+
+#9 [5/9] RUN npm --global --loglevel info install express
+#9 CACHED
+
+#10 [6/9] RUN npm --global --loglevel info install request
+#10 CACHED
+
+#11 [8/9] RUN npm --global --loglevel info install zombie
+#11 CACHED
+
+#12 [9/9] RUN npm --global --loglevel info install puppeteer
+#12 2.403 npm info using npm@9.6.4
+#12 2.410 npm info using node@v20.1.0
+#12 4.139 npm http fetch GET 200 https://registry.npmjs.org/puppeteer 1600ms (cache updated)
+#12 4.295 npm http fetch GET 200 https://registry.npmjs.org/cosmiconfig 102ms (cache updated)
+#12 4.375 npm http fetch GET 200 https://registry.npmjs.org/puppeteer-core 180ms (cache updated)
+#12 4.549 npm http fetch GET 200 https://registry.npmjs.org/@puppeteer%2fbrowsers 350ms (cache updated)
+#12 4.749 npm http fetch GET 200 https://registry.npmjs.org/typescript 173ms (cache revalidated)
+#12 5.262 npm http fetch GET 200 https://registry.npmjs.org/debug 238ms (cache revalidated)
+#12 5.273 npm http fetch GET 200 https://registry.npmjs.org/progress 244ms (cache revalidated)
+#12 5.281 npm http fetch GET 200 https://registry.npmjs.org/extract-zip 255ms (cache revalidated)
+#12 5.488 npm http fetch GET 200 https://registry.npmjs.org/ws 439ms (cache revalidated)
+#12 5.499 npm http fetch GET 200 https://registry.npmjs.org/proxy-agent 469ms (cache revalidated)
+#12 5.510 npm http fetch GET 200 https://registry.npmjs.org/parse-json 469ms (cache revalidated)
+#12 5.523 npm http fetch GET 200 https://registry.npmjs.org/import-fresh 485ms (cache revalidated)
+#12 5.531 npm http fetch GET 200 https://registry.npmjs.org/path-type 487ms (cache revalidated)
+#12 5.539 npm http fetch GET 200 https://registry.npmjs.org/yargs 504ms (cache revalidated)
+#12 5.554 npm http fetch GET 200 https://registry.npmjs.org/unbzip2-stream 520ms (cache revalidated)
+#12 5.563 npm http fetch GET 200 https://registry.npmjs.org/js-yaml 523ms (cache revalidated)
+#12 5.593 npm http fetch GET 200 https://registry.npmjs.org/chromium-bidi 549ms (cache updated)
+#12 5.612 npm http fetch GET 200 https://registry.npmjs.org/cross-fetch 565ms (cache updated)
+#12 5.664 npm http fetch GET 200 https://registry.npmjs.org/devtools-protocol 616ms (cache updated)
+#12 6.445 npm http fetch GET 200 https://registry.npmjs.org/tar-fs 1413ms (cache updated)
+#12 7.053 npm http fetch GET 200 https://registry.npmjs.org/ms 550ms (cache revalidated)
+#12 7.063 npm http fetch GET 200 https://registry.npmjs.org/yauzl 552ms (cache revalidated)
+#12 7.101 npm http fetch GET 200 https://registry.npmjs.org/https-proxy-agent 569ms (cache revalidated)
+#12 7.113 npm http fetch GET 200 https://registry.npmjs.org/agent-base 589ms (cache revalidated)
+#12 7.121 npm http fetch GET 200 https://registry.npmjs.org/http-proxy-agent 591ms (cache revalidated)
+#12 7.129 npm http fetch GET 200 https://registry.npmjs.org/lru-cache 590ms (cache revalidated)
+#12 7.152 npm http fetch GET 200 https://registry.npmjs.org/socks-proxy-agent 592ms (cache revalidated)
+#12 7.160 npm http fetch GET 200 https://registry.npmjs.org/pac-proxy-agent 619ms (cache revalidated)
+#12 7.168 npm http fetch GET 200 https://registry.npmjs.org/proxy-from-env 624ms (cache revalidated)
+#12 7.179 npm http fetch GET 200 https://registry.npmjs.org/cliui 606ms (cache revalidated)
+#12 7.187 npm http fetch GET 200 https://registry.npmjs.org/escalade 612ms (cache revalidated)
+#12 7.193 npm http fetch GET 200 https://registry.npmjs.org/get-caller-file 616ms (cache revalidated)
+#12 7.199 npm http fetch GET 200 https://registry.npmjs.org/require-directory 619ms (cache revalidated)
+#12 7.205 npm http fetch GET 200 https://registry.npmjs.org/string-width 623ms (cache revalidated)
+#12 7.212 npm http fetch GET 200 https://registry.npmjs.org/buffer 643ms (cache revalidated)
+#12 7.223 npm http fetch GET 200 https://registry.npmjs.org/mkdirp-classic 660ms (cache revalidated)
+#12 7.230 npm http fetch GET 200 https://registry.npmjs.org/@types%2fyauzl 709ms (cache revalidated)
+#12 7.243 npm http fetch GET 200 https://registry.npmjs.org/pump 677ms (cache revalidated)
+#12 7.252 npm http fetch GET 200 https://registry.npmjs.org/y18n 668ms (cache revalidated)
+#12 7.260 npm http fetch GET 200 https://registry.npmjs.org/yargs-parser 674ms (cache revalidated)
+#12 7.271 npm http fetch GET 200 https://registry.npmjs.org/get-stream 767ms (cache updated)
+#12 7.285 npm http fetch GET 200 https://registry.npmjs.org/through 714ms (cache updated)
+#12 7.298 npm http fetch GET 200 https://registry.npmjs.org/tar-stream 730ms (cache updated)
+#12 7.413 npm http fetch GET 200 https://registry.npmjs.org/parent-module 88ms (cache revalidated)
+#12 7.472 npm http fetch GET 200 https://registry.npmjs.org/resolve-from 146ms (cache revalidated)
+#12 7.481 npm http fetch GET 200 https://registry.npmjs.org/argparse 153ms (cache revalidated)
+#12 7.489 npm http fetch GET 200 https://registry.npmjs.org/json-parse-even-better-errors 155ms (cache revalidated)
+#12 7.498 npm http fetch GET 200 https://registry.npmjs.org/lines-and-columns 162ms (cache revalidated)
+#12 7.511 npm http fetch GET 200 https://registry.npmjs.org/error-ex 179ms (cache updated)
+#12 7.525 npm http fetch GET 200 https://registry.npmjs.org/@babel%2fcode-frame 195ms (cache updated)
+#12 7.610 npm http fetch GET 200 https://registry.npmjs.org/buffer-crc32 56ms (cache revalidated)
+#12 7.785 npm http fetch GET 200 https://registry.npmjs.org/fd-slicer 233ms (cache revalidated)
+#12 7.856 npm http fetch GET 200 https://registry.npmjs.org/@types%2fnode 307ms (cache updated)
+#12 7.972 npm http fetch GET 200 https://registry.npmjs.org/end-of-stream 62ms (cache revalidated)
+#12 7.985 npm http fetch GET 200 https://registry.npmjs.org/once 73ms (cache revalidated)
+#12 8.047 npm http fetch GET 200 https://registry.npmjs.org/callsites 47ms (cache revalidated)
+#12 8.179 npm http fetch GET 200 https://registry.npmjs.org/is-arrayish 84ms (cache revalidated)
+#12 8.188 npm http fetch GET 200 https://registry.npmjs.org/@babel%2fhighlight 95ms (cache updated)
+#12 8.271 npm http fetch GET 200 https://registry.npmjs.org/chalk 60ms (cache revalidated)
+#12 8.282 npm http fetch GET 200 https://registry.npmjs.org/js-tokens 69ms (cache revalidated)
+#12 8.307 npm http fetch GET 200 https://registry.npmjs.org/@babel%2fhelper-validator-identifier 103ms (cache updated)
+#12 8.385 npm http fetch GET 200 https://registry.npmjs.org/ansi-styles 59ms (cache revalidated)
+#12 8.410 npm http fetch GET 200 https://registry.npmjs.org/escape-string-regexp 82ms (cache revalidated)
+#12 8.422 npm http fetch GET 200 https://registry.npmjs.org/supports-color 92ms (cache revalidated)
+#12 8.532 npm http fetch GET 200 https://registry.npmjs.org/color-convert 81ms (cache revalidated)
+#12 8.541 npm http fetch GET 200 https://registry.npmjs.org/has-flag 88ms (cache revalidated)
+#12 8.595 npm http fetch GET 200 https://registry.npmjs.org/color-name 42ms (cache revalidated)
+#12 8.832 npm http fetch GET 200 https://registry.npmjs.org/get-uri 186ms (cache revalidated)
+#12 8.840 npm http fetch GET 200 https://registry.npmjs.org/socks 191ms (cache revalidated)
+#12 8.849 npm http fetch GET 200 https://registry.npmjs.org/pac-resolver 202ms (cache revalidated)
+#12 8.945 npm http fetch GET 200 https://registry.npmjs.org/data-uri-to-buffer 68ms (cache revalidated)
+#12 8.971 npm http fetch GET 200 https://registry.npmjs.org/ip 87ms (cache revalidated)
+#12 8.990 npm http fetch GET 200 https://registry.npmjs.org/fs-extra 111ms (cache revalidated)
+#12 9.009 npm http fetch GET 200 https://registry.npmjs.org/netmask 123ms (cache revalidated)
+#12 9.021 npm http fetch GET 200 https://registry.npmjs.org/degenerator 139ms (cache updated)
+#12 9.029 npm http fetch GET 200 https://registry.npmjs.org/basic-ftp 155ms (cache revalidated)
+#12 9.118 npm http fetch GET 200 https://registry.npmjs.org/jsonfile 67ms (cache revalidated)
+#12 9.139 npm http fetch GET 200 https://registry.npmjs.org/graceful-fs 90ms (cache updated)
+#12 9.150 npm http fetch GET 200 https://registry.npmjs.org/universalify 97ms (cache revalidated)
+#12 9.307 npm http fetch GET 200 https://registry.npmjs.org/escodegen 104ms (cache revalidated)
+#12 9.319 npm http fetch GET 200 https://registry.npmjs.org/vm2 113ms (cache revalidated)
+#12 9.331 npm http fetch GET 200 https://registry.npmjs.org/esprima 127ms (cache revalidated)
+#12 9.352 npm http fetch GET 200 https://registry.npmjs.org/ast-types 152ms (cache updated)
+#12 9.494 npm http fetch GET 200 https://registry.npmjs.org/tslib 88ms (cache revalidated)
+#12 9.518 npm http fetch GET 200 https://registry.npmjs.org/esutils 108ms (cache revalidated)
+#12 9.533 npm http fetch GET 200 https://registry.npmjs.org/estraverse 125ms (cache revalidated)
+#12 9.556 npm http fetch GET 200 https://registry.npmjs.org/acorn-walk 134ms (cache revalidated)
+#12 9.570 npm http fetch GET 200 https://registry.npmjs.org/acorn 150ms (cache revalidated)
+#12 9.585 npm http fetch GET 200 https://registry.npmjs.org/optionator 173ms (cache revalidated)
+#12 9.596 npm http fetch GET 200 https://registry.npmjs.org/source-map 178ms (cache revalidated)
+#12 9.717 npm http fetch GET 200 https://registry.npmjs.org/prelude-ls 93ms (cache revalidated)
+#12 9.736 npm http fetch GET 200 https://registry.npmjs.org/type-check 106ms (cache revalidated)
+#12 9.743 npm http fetch GET 200 https://registry.npmjs.org/word-wrap 115ms (cache revalidated)
+#12 9.750 npm http fetch GET 200 https://registry.npmjs.org/fast-levenshtein 108ms (cache revalidated)
+#12 9.755 npm http fetch GET 200 https://registry.npmjs.org/deep-is 129ms (cache revalidated)
+#12 9.774 npm http fetch GET 200 https://registry.npmjs.org/levn 135ms (cache revalidated)
+#12 9.887 npm http fetch GET 200 https://registry.npmjs.org/wrappy 60ms (cache revalidated)
+#12 9.973 npm http fetch GET 200 https://registry.npmjs.org/bufferutil 68ms (cache revalidated)
+#12 10.04 npm http fetch GET 200 https://registry.npmjs.org/utf-8-validate 52ms (cache revalidated)
+#12 10.14 npm http fetch GET 200 https://registry.npmjs.org/node-fetch 60ms (cache revalidated)
+#12 10.17 npm http fetch GET 200 https://registry.npmjs.org/mitt 107ms (cache revalidated)
+#12 10.25 npm http fetch GET 200 https://registry.npmjs.org/encoding 50ms (cache updated)
+#12 10.32 npm http fetch GET 200 https://registry.npmjs.org/whatwg-url 58ms (cache revalidated)
+#12 10.43 npm http fetch GET 200 https://registry.npmjs.org/webidl-conversions 77ms (cache revalidated)
+#12 10.44 npm http fetch GET 200 https://registry.npmjs.org/tr46 87ms (cache revalidated)
+#12 10.51 npm http fetch GET 200 https://registry.npmjs.org/smart-buffer 62ms (cache revalidated)
+#12 10.63 npm http fetch GET 200 https://registry.npmjs.org/fast-fifo 77ms (cache miss)
+#12 10.67 npm http fetch GET 200 https://registry.npmjs.org/b4a 123ms (cache miss)
+#12 10.68 npm http fetch GET 200 https://registry.npmjs.org/streamx 127ms (cache miss)
+#12 10.78 npm http fetch GET 200 https://registry.npmjs.org/queue-tick 62ms (cache miss)
+#12 10.85 npm http fetch GET 200 https://registry.npmjs.org/ieee754 53ms (cache revalidated)
+#12 10.87 npm http fetch GET 200 https://registry.npmjs.org/base64-js 77ms (cache revalidated)
+#12 11.15 npm http fetch GET 200 https://registry.npmjs.org/strip-ansi 205ms (cache revalidated)
+#12 11.16 npm http fetch GET 200 https://registry.npmjs.org/wrap-ansi 211ms (cache revalidated)
+#12 11.17 npm http fetch GET 200 https://registry.npmjs.org/is-fullwidth-code-point 213ms (cache revalidated)
+#12 11.17 npm http fetch GET 200 https://registry.npmjs.org/emoji-regex 222ms (cache revalidated)
+#12 11.25 npm http fetch GET 200 https://registry.npmjs.org/ansi-regex 56ms (cache revalidated)
+#12 12.43 npm http fetch GET 200 https://registry.npmjs.org/pend 1154ms (cache revalidated)
+#12 32.63 npm http fetch GET 200 https://registry.npmjs.org/queue-tick/-/queue-tick-1.0.1.tgz 2197ms (cache miss)
+#12 32.67 npm http fetch GET 200 https://registry.npmjs.org/fast-fifo/-/fast-fifo-1.2.0.tgz 2240ms (cache miss)
+#12 32.75 npm http fetch GET 200 https://registry.npmjs.org/tar-fs/-/tar-fs-3.0.2.tgz 2247ms (cache miss)
+#12 32.75 npm http fetch GET 200 https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.22.5.tgz 2279ms (cache miss)
+#12 32.76 npm http fetch GET 200 https://registry.npmjs.org/@babel/highlight/-/highlight-7.22.5.tgz 2290ms (cache miss)
+#12 32.85 npm http fetch GET 200 https://registry.npmjs.org/b4a/-/b4a-1.6.4.tgz 2395ms (cache miss)
+#12 32.90 npm http fetch GET 200 https://registry.npmjs.org/streamx/-/streamx-2.15.0.tgz 2453ms (cache miss)
+#12 32.94 npm http fetch GET 200 https://registry.npmjs.org/tar-stream/-/tar-stream-3.1.4.tgz 2446ms (cache miss)
+#12 32.95 npm http fetch GET 200 https://registry.npmjs.org/degenerator/-/degenerator-4.0.3.tgz 2421ms (cache miss)
+#12 32.96 npm http fetch GET 200 https://registry.npmjs.org/proxy-agent/-/proxy-agent-6.2.1.tgz 2449ms (cache miss)
+#12 33.03 npm http fetch GET 200 https://registry.npmjs.org/@babel/helper-validator-identifier/-/helper-validator-identifier-7.22.5.tgz 2559ms (cache miss)
+#12 33.09 npm http fetch GET 200 https://registry.npmjs.org/tslib/-/tslib-2.5.3.tgz 2596ms (cache miss)
+#12 33.59 npm http fetch GET 200 https://registry.npmjs.org/cosmiconfig/-/cosmiconfig-8.2.0.tgz 3053ms (cache miss)
+#12 33.83 npm http fetch GET 200 https://registry.npmjs.org/puppeteer/-/puppeteer-20.7.3.tgz 3402ms (cache miss)
+#12 34.13 npm http fetch GET 200 https://registry.npmjs.org/devtools-protocol/-/devtools-protocol-0.0.1135028.tgz 3606ms (cache miss)
+#12 34.30 npm http fetch GET 200 https://registry.npmjs.org/@puppeteer/browsers/-/browsers-1.4.2.tgz 3837ms (cache miss)
+#12 34.81 npm http fetch GET 200 https://registry.npmjs.org/chromium-bidi/-/chromium-bidi-0.4.12.tgz 4261ms (cache miss)
+#12 34.88 npm http fetch GET 200 https://registry.npmjs.org/@types/node/-/node-20.3.1.tgz 4419ms (cache miss)
+#12 36.33 npm http fetch GET 200 https://registry.npmjs.org/puppeteer-core/-/puppeteer-core-20.7.3.tgz 5824ms (cache miss)
+#12 36.38 npm info run puppeteer@20.7.3 postinstall node_modules/puppeteer node install.js
+#12 97.07 npm info run puppeteer@20.7.3 postinstall { code: 0, signal: null }
+#12 98.56 
+#12 98.56 added 4 packages, removed 10 packages, and changed 114 packages in 2m
+#12 98.56 
+#12 98.56 9 packages are looking for funding
+#12 98.56   run `npm fund` for details
+#12 98.56 npm info ok 
+#12 DONE 99.5s
+
+#13 exporting to image
+#13 exporting layers
+#13 exporting layers 13.8s done
+#13 writing image sha256:f50c6d5d7023117967def5cc13c6846d52acdc8b99e08f739d90a197a089e873
+#13 writing image sha256:f50c6d5d7023117967def5cc13c6846d52acdc8b99e08f739d90a197a089e873 done
+#13 naming to docker.io/library/flat_trade_token_generator:0.0.1 0.0s done
+#13 DONE 13.8s

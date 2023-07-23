@@ -1,8 +1,10 @@
 
 const fs = require('fs')
-const totp = require("totp-generator");
-var Browser = require("zombie");
-const token = totp("V66RE47RI74LO7S7I5LPZ3J6Y7IIWOR6", { digits: 6 });
+const totp = require("/usr/local/lib/node_modules/totp-generator");
+var Browser = require("/usr/local/lib/node_modules/zombie");
+const api_key='2023.da32b9591a634e0cbe227083b41f8b2b10b8c3229da8a810'
+const totp_hash="V66RE47RI74LO7S7I5LPZ3J6Y7IIWOR6"
+const token = totp(`${totp_hash}`, { digits: 6 });
 console.log(token); // prints an 6-digit token
 
 const inspect = obj => {
@@ -15,7 +17,6 @@ const inspect = obj => {
 
 //   inspect(token)
 // console.log('%O',); // prints an 8-digit token
-
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -36,28 +37,42 @@ const generate_totp_at14th_second = async () => {
     let diff = t - to;
     console.log(`generate_totp_at14th_second: Added ${d} seconds to "${to}", will generate token at ${t}, gap is ${(t - to) / 1000} seconds`);
     await sleep(diff);
-    return totp("V66RE47RI74LO7S7I5LPZ3J6Y7IIWOR6", { digits: 6 });
+    return totp(`${totp_hash}`, { digits: 6 });
 };
 
 async function getRequestCodeFromFlatTrade() {
     let user_agent = 'Mozilla/5.0 (X11; CrOS x86_64 15183.14.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36';
     let browser = new Browser({
-        userAgent: user_agent, debug: true, maxWait: 12000,
-        waitDuration: 20 * 1000,
+        userAgent: user_agent, debug: true, 
+	    //maxWait: 12000000,
+	maxWait: '60s',
+	maxRedirects: 100,
+	
+        //waitDuration: '20s',
     });
 
-
+	browser.on("error", function(error) {
+  console.error(`on error: ${error}`);
+});
+    browser.debug = true
     browser.pipeline.addHandler(function (browser, request, response) {
         // Log the response body
+	console.log("************************ ===========================================")
         console.log('request : ' + JSON.stringify(request));
+	console.log("===========================================")
         console.log('Response : ' + JSON.stringify(response));
-        return response;
+	//return new Promise(function(resolve) {
+    //setTimeout(resolve, 100);
+  //});
+    sleep(500);
+	    return response;
     });
     // let url = 'https://www.google.com';
-    let url = 'https://auth.flattrade.in/?app_key=817b42a19c3c4e2cb7b964a28ace809f'
+    let url = `https://auth.flattrade.in/?app_key=${api_key}`
+    console.log(`url: ${url}`)
     browser.visit(url, async function (error) {
         if (error) {
-            console.log("Error In Browser:", error);
+            console.log("****** Error In Browser:", error);
             return { error };
         }
         console.log("---------------- loaded page: ");
@@ -123,7 +138,7 @@ async function init() {
     getRequestCodeFromFlatTrade();
     // let tk = await generate_totp_at14th_second();
     // console.log(tk); // prints an 6-digit token
-
+    sleep(5)
 }
 
 init()

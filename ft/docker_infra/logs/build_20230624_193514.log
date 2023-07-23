@@ -1,0 +1,403 @@
+#1 [internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.1s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 453B 0.0s done
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/node:20.1.0-bullseye
+#3 DONE 6.6s
+
+#4 [1/4] FROM docker.io/library/node:20.1.0-bullseye@sha256:0efc3ef3fea2822c9d16da084c40181ed7f74b6f45141100580f9887ccc8e9a1
+#4 DONE 0.0s
+
+#5 [3/4] RUN apt-get update
+#5 CACHED
+
+#6 [2/4] WORKDIR /app
+#6 CACHED
+
+#7 [4/4] RUN apt-get install -y build-essential cmake git openssh-server gdb pkg-config valgrind systemd-coredump
+#7 CACHED
+
+#8 exporting to image
+#8 exporting layers done
+#8 writing image sha256:520fbe4956f762f320ef365b50d55a9ff78780d770ee8cb7f7e76feedb3ca8ef done
+#8 naming to docker.io/library/base_os:0.0.1 done
+#8 DONE 0.0s
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 3.76kB done
+#1 DONE 0.1s
+
+#2 [internal] load .dockerignore
+#2 transferring context: 2B done
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/base_os:0.0.1
+#3 DONE 0.0s
+
+#4 [ 1/77] FROM docker.io/library/base_os:0.0.1
+#4 DONE 0.0s
+
+#5 [30/77] RUN npm --global --loglevel info install uglifyjs2
+#5 CACHED
+
+#6 [22/77] RUN npm --global --loglevel info install passport
+#6 CACHED
+
+#7 [47/77] RUN npm --global --loglevel info install json5
+#7 CACHED
+
+#8 [13/77] RUN npm --global --loglevel info install async
+#8 CACHED
+
+#9 [15/77] RUN npm --global --loglevel info install grunt-cli
+#9 CACHED
+
+#10 [29/77] RUN npm --global --loglevel info install underscore
+#10 CACHED
+
+#11 [63/77] RUN npm --global --loglevel info install file-loader
+#11 CACHED
+
+#12 [65/77] RUN npm --global --loglevel info install eslint-plugin-import
+#12 CACHED
+
+#13 [70/77] RUN npm --global --loglevel info install ejs
+#13 CACHED
+
+#14 [71/77] RUN npm --global --loglevel info install superagent
+#14 CACHED
+
+#15 [57/77] RUN npm --global --loglevel info install yargs
+#15 CACHED
+
+#16 [52/77] RUN npm --global --loglevel info install moment
+#16 CACHED
+
+#17 [24/77] RUN npm --global --loglevel info install sharp
+#17 CACHED
+
+#18 [45/77] RUN npm --global --loglevel info install debug
+#18 CACHED
+
+#19 [49/77] RUN npm --global --loglevel info install compression
+#19 CACHED
+
+#20 [20/77] RUN npm --global --loglevel info install redux
+#20 CACHED
+
+#21 [12/77] RUN npm --global --loglevel info install agenda
+#21 CACHED
+
+#22 [37/77] RUN npm --global --loglevel info install graphicsmagick
+#22 CACHED
+
+#23 [44/77] RUN npm --global --loglevel info install bunyan
+#23 CACHED
+
+#24 [21/77] RUN npm --global --loglevel info install dotenv
+#24 CACHED
+
+#25 [33/77] RUN npm --global --loglevel info install sqlite
+#25 CACHED
+
+#26 [68/77] RUN npm --global --loglevel info install ws
+#26 CACHED
+
+#27 [14/77] RUN npm --global --loglevel info install axios
+#27 CACHED
+
+#28 [32/77] RUN npm --global --loglevel info install pug
+#28 CACHED
+
+#29 [31/77] RUN npm --global --loglevel info install hapi
+#29 CACHED
+
+#30 [53/77] RUN npm --global --loglevel info install vue
+#30 CACHED
+
+#31 [10/77] RUN npm --global --loglevel info install gulp
+#31 CACHED
+
+#32 [19/77] RUN npm --global --loglevel info install react
+#32 CACHED
+
+#33 [73/77] RUN npm --global --loglevel info install vue-router
+#33 CACHED
+
+#34 [41/77] RUN npm --global --loglevel info install debug
+#34 CACHED
+
+#35 [18/77] RUN npm --global --loglevel info install socket.io
+#35 CACHED
+
+#36 [62/77] RUN npm --global --loglevel info install object-assign
+#36 CACHED
+
+#37 [35/77] RUN npm --global --loglevel info install angular
+#37 CACHED
+
+#38 [48/77] RUN npm --global --loglevel info install helmet
+#38 CACHED
+
+#39 [58/77] RUN npm --global --loglevel info install uuid
+#39 CACHED
+
+#40 [54/77] RUN npm --global --loglevel info install tslib
+#40 CACHED
+
+#41 [16/77] RUN npm --global --loglevel info install grunt
+#41 CACHED
+
+#42 [ 3/77] RUN npm --global --loglevel info install express
+#42 CACHED
+
+#43 [46/77] RUN npm --global --loglevel info install flat
+#43 CACHED
+
+#44 [ 2/77] RUN npm set progress=true
+#44 CACHED
+
+#45 [34/77] RUN npm --global --loglevel info install webpack
+#45 CACHED
+
+#46 [17/77] RUN npm --global --loglevel info install pm2
+#46 CACHED
+
+#47 [39/77] RUN npm --global --loglevel info install moment
+#47 CACHED
+
+#48 [23/77] RUN npm --global --loglevel info install winston
+#48 CACHED
+
+#49 [42/77] RUN npm --global --loglevel info install body-parser
+#49 CACHED
+
+#50 [69/77] RUN npm --global --loglevel info install fs
+#50 CACHED
+
+#51 [36/77] RUN npm --global --loglevel info install marked
+#51 CACHED
+
+#52 [74/77] RUN npm --global --loglevel info install chokidar
+#52 CACHED
+
+#53 [ 4/77] RUN npm --global --loglevel info install lodash
+#53 CACHED
+
+#54 [27/77] RUN npm --global --loglevel info install browserify
+#54 CACHED
+
+#55 [61/77] RUN npm --global --loglevel info install redux
+#55 CACHED
+
+#56 [75/77] RUN npm --global --loglevel info install mime
+#56 CACHED
+
+#57 [ 9/77] RUN npm --global --loglevel info install nodemailer
+#57 CACHED
+
+#58 [64/77] RUN npm --global --loglevel info install handlebars
+#58 CACHED
+
+#59 [66/77] RUN npm --global --loglevel info install eslint-plugin-react
+#59 CACHED
+
+#60 [55/77] RUN npm --global --loglevel info install mkdirp
+#60 CACHED
+
+#61 [51/77] RUN npm --global --loglevel info install fs-extra
+#61 CACHED
+
+#62 [26/77] RUN npm --global --loglevel info install request
+#62 CACHED
+
+#63 [ 7/77] RUN npm --global --loglevel info install nodemon
+#63 CACHED
+
+#64 [38/77] RUN npm --global --loglevel info install jsdom
+#64 CACHED
+
+#65 [56/77] RUN npm --global --loglevel info install glob
+#65 CACHED
+
+#66 [40/77] RUN npm --global --loglevel info install chalk
+#66 CACHED
+
+#67 [76/77] RUN npm --global --loglevel info install cookie-parser
+#67 CACHED
+
+#68 [43/77] RUN npm --global --loglevel info install husky
+#68 CACHED
+
+#69 [72/77] RUN npm --global --loglevel info install vue
+#69 CACHED
+
+#70 [25/77] RUN npm --global --loglevel info install puppeteer
+#70 CACHED
+
+#71 [67/77] RUN npm --global --loglevel info install url-loader
+#71 CACHED
+
+#72 [ 8/77] RUN npm --global --loglevel info install restify
+#72 CACHED
+
+#73 [60/77] RUN npm --global --loglevel info install rxjs
+#73 CACHED
+
+#74 [50/77] RUN npm --global --loglevel info install react-dom
+#74 CACHED
+
+#75 [ 6/77] RUN npm --global --loglevel info install morgan
+#75 CACHED
+
+#76 [28/77] RUN npm --global --loglevel info install bower
+#76 CACHED
+
+#77 [ 5/77] RUN npm --global --loglevel info install eslint
+#77 CACHED
+
+#78 [11/77] RUN npm --global --loglevel info install molecular
+#78 CACHED
+
+#79 [59/77] RUN npm --global --loglevel info install totp
+#79 CACHED
+
+#80 [77/77] RUN npm --global --loglevel info install speakeasy
+#80 CACHED
+
+#81 exporting to image
+#81 exporting layers done
+#81 writing image sha256:a6c4fcf35037e96300b0184839c1a510510133acac2092b5dc24318c22cee6ad 0.0s done
+#81 naming to docker.io/library/base_node_js:0.0.1 0.0s done
+#81 DONE 0.0s
+#1 [internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 272B 0.1s done
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/base_node_js:0.0.1
+#3 DONE 0.0s
+
+#4 [1/4] FROM docker.io/library/base_node_js:0.0.1
+#4 DONE 0.0s
+
+#5 [3/4] RUN pip3 install nibabel pydicom matplotlib pillow
+#5 CACHED
+
+#6 [2/4] RUN apt-get install -y --no-install-recommends     python3     python3-pip
+#6 CACHED
+
+#7 [4/4] RUN pip3 install med2image
+#7 CACHED
+
+#8 exporting to image
+#8 exporting layers done
+#8 writing image sha256:adb47c7f32591db7c6761c44d0bf6d8f323ac87d6e16357cc988bbd8e83e3184 0.0s done
+#8 naming to docker.io/library/base_python:0.0.1 0.0s done
+#8 DONE 0.0s
+#1 [internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 487B 0.0s done
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/base_python:0.0.1
+#3 DONE 0.0s
+
+#4 [1/5] FROM docker.io/library/base_python:0.0.1
+#4 DONE 0.0s
+
+#5 [2/5] RUN npm --global --loglevel info install crypto
+#5 CACHED
+
+#6 [3/5] RUN npm --global --loglevel info install sha256
+#6 CACHED
+
+#7 [4/5] RUN npm --global --loglevel info install eslint-config-standard-with-typescript  @typescript-eslint/eslint-plugin@^5.50.0 eslint@^8.0.1 eslint-plugin-import@^2.25.2 eslint-plugin-n@^15.0.0 eslint-plugin-promise@^6.0.0 typescript
+#7 CACHED
+
+#8 [5/5] RUN npm --global --loglevel info install express
+#8 2.442 npm info using npm@9.6.4
+#8 2.454 npm info using node@v20.1.0
+#8 2.888 npm http fetch GET 200 https://registry.npmjs.org/express 317ms (cache updated)
+#8 3.414 npm http fetch GET 200 https://registry.npmjs.org/accepts 487ms (cache revalidated)
+#8 3.631 npm http fetch GET 200 https://registry.npmjs.org/http-errors 673ms (cache revalidated)
+#8 3.705 npm http fetch GET 200 https://registry.npmjs.org/escape-html 755ms (cache revalidated)
+#8 3.713 npm http fetch GET 200 https://registry.npmjs.org/array-flatten 784ms (cache revalidated)
+#8 3.718 npm http fetch GET 200 https://registry.npmjs.org/content-disposition 783ms (cache revalidated)
+#8 3.725 npm http fetch GET 200 https://registry.npmjs.org/cookie-signature 784ms (cache revalidated)
+#8 3.731 npm http fetch GET 200 https://registry.npmjs.org/etag 779ms (cache revalidated)
+#8 3.738 npm http fetch GET 200 https://registry.npmjs.org/cookie 799ms (cache revalidated)
+#8 3.745 npm http fetch GET 200 https://registry.npmjs.org/depd 800ms (cache revalidated)
+#8 3.753 npm http fetch GET 200 https://registry.npmjs.org/debug 810ms (cache revalidated)
+#8 3.784 npm http fetch GET 200 https://registry.npmjs.org/methods 822ms (cache revalidated)
+#8 3.792 npm http fetch GET 200 https://registry.npmjs.org/path-to-regexp 825ms (cache revalidated)
+#8 3.799 npm http fetch GET 200 https://registry.npmjs.org/parseurl 834ms (cache revalidated)
+#8 3.807 npm http fetch GET 200 https://registry.npmjs.org/finalhandler 853ms (cache revalidated)
+#8 3.815 npm http fetch GET 200 https://registry.npmjs.org/fresh 859ms (cache revalidated)
+#8 3.822 npm http fetch GET 200 https://registry.npmjs.org/merge-descriptors 862ms (cache revalidated)
+#8 3.831 npm http fetch GET 200 https://registry.npmjs.org/on-finished 867ms (cache revalidated)
+#8 3.843 npm http fetch GET 200 https://registry.npmjs.org/send 862ms (cache revalidated)
+#8 3.852 npm http fetch GET 200 https://registry.npmjs.org/proxy-addr 883ms (cache revalidated)
+#8 3.860 npm http fetch GET 200 https://registry.npmjs.org/range-parser 885ms (cache revalidated)
+#8 3.867 npm http fetch GET 200 https://registry.npmjs.org/qs 895ms (cache revalidated)
+#8 3.877 npm http fetch GET 200 https://registry.npmjs.org/safe-buffer 899ms (cache revalidated)
+#8 3.894 npm http fetch GET 200 https://registry.npmjs.org/statuses 896ms (cache revalidated)
+#8 3.901 npm http fetch GET 200 https://registry.npmjs.org/type-is 901ms (cache revalidated)
+#8 3.909 npm http fetch GET 200 https://registry.npmjs.org/setprototypeof 921ms (cache revalidated)
+#8 3.915 npm http fetch GET 200 https://registry.npmjs.org/utils-merge 911ms (cache revalidated)
+#8 3.920 npm http fetch GET 200 https://registry.npmjs.org/serve-static 934ms (cache revalidated)
+#8 3.926 npm http fetch GET 200 https://registry.npmjs.org/vary 920ms (cache revalidated)
+#8 3.934 npm http fetch GET 200 https://registry.npmjs.org/encodeurl 986ms (cache revalidated)
+#8 3.952 npm http fetch GET 200 https://registry.npmjs.org/body-parser 1020ms (cache updated)
+#8 4.632 npm http fetch GET 200 https://registry.npmjs.org/content-type 1695ms (cache revalidated)
+#8 5.229 npm http fetch GET 200 https://registry.npmjs.org/ms 295ms (cache revalidated)
+#8 5.239 npm http fetch GET 200 https://registry.npmjs.org/inherits 299ms (cache revalidated)
+#8 5.243 npm http fetch GET 200 https://registry.npmjs.org/negotiator 322ms (cache revalidated)
+#8 5.248 npm http fetch GET 200 https://registry.npmjs.org/unpipe 316ms (cache revalidated)
+#8 5.253 npm http fetch GET 200 https://registry.npmjs.org/unpipe 316ms (cache revalidated)
+#8 5.260 npm http fetch GET 200 https://registry.npmjs.org/bytes 334ms (cache revalidated)
+#8 5.272 npm http fetch GET 200 https://registry.npmjs.org/side-channel 324ms (cache revalidated)
+#8 5.280 npm http fetch GET 200 https://registry.npmjs.org/mime-types 361ms (cache revalidated)
+#8 5.287 npm http fetch GET 200 https://registry.npmjs.org/forwarded 342ms (cache revalidated)
+#8 5.294 npm http fetch GET 200 https://registry.npmjs.org/destroy 369ms (cache revalidated)
+#8 5.300 npm http fetch GET 200 https://registry.npmjs.org/iconv-lite 373ms (cache revalidated)
+#8 5.308 npm http fetch GET 200 https://registry.npmjs.org/raw-body 378ms (cache revalidated)
+#8 5.316 npm http fetch GET 200 https://registry.npmjs.org/ee-first 373ms (cache revalidated)
+#8 5.323 npm http fetch GET 200 https://registry.npmjs.org/ms 358ms (cache revalidated)
+#8 5.328 npm http fetch GET 200 https://registry.npmjs.org/toidentifier 387ms (cache revalidated)
+#8 5.347 npm http fetch GET 200 https://registry.npmjs.org/mime-types 377ms (cache revalidated)
+#8 5.354 npm http fetch GET 200 https://registry.npmjs.org/media-typer 387ms (cache revalidated)
+#8 5.361 npm http fetch GET 200 https://registry.npmjs.org/mime 398ms (cache revalidated)
+#8 5.467 npm http fetch GET 200 https://registry.npmjs.org/ipaddr.js 520ms (cache updated)
+#8 5.571 npm http fetch GET 200 https://registry.npmjs.org/mime-db 84ms (cache updated)
+#8 5.671 npm http fetch GET 200 https://registry.npmjs.org/safer-buffer 61ms (cache revalidated)
+#8 5.783 npm http fetch GET 200 https://registry.npmjs.org/call-bind 57ms (cache revalidated)
+#8 5.800 npm http fetch GET 200 https://registry.npmjs.org/object-inspect 69ms (cache revalidated)
+#8 5.808 npm http fetch GET 200 https://registry.npmjs.org/get-intrinsic 80ms (cache revalidated)
+#8 5.916 npm http fetch GET 200 https://registry.npmjs.org/function-bind 78ms (cache revalidated)
+#8 5.935 npm http fetch GET 200 https://registry.npmjs.org/has 94ms (cache revalidated)
+#8 5.943 npm http fetch GET 200 https://registry.npmjs.org/has-symbols 98ms (cache revalidated)
+#8 5.951 npm http fetch GET 200 https://registry.npmjs.org/has-proto 109ms (cache revalidated)
+#8 10.45 
+#8 10.45 changed 58 packages in 8s
+#8 10.45 
+#8 10.45 8 packages are looking for funding
+#8 10.45   run `npm fund` for details
+#8 10.46 npm info ok 
+#8 DONE 10.7s
+
+#9 exporting to image
+#9 exporting layers
+#9 exporting layers 0.5s done
+#9 writing image sha256:9c2bf55e5d16ff99649db72dd5e4c0c264af76409b037249f948f7c5da7739bb 0.0s done
+#9 naming to docker.io/library/flat_trade_token_generator:0.0.1 0.0s done
+#9 DONE 0.5s

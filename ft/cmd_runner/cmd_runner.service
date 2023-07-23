@@ -1,0 +1,23 @@
+# copy this file to  /lib/systemd/system/
+# run cmd_runner.service_setup.sh which runs following
+# then sudo systemctl stop cmd_runner
+# then sudo systemctl disable cmd_runner
+# then sudo systemctl enable cmd_runner
+# then sudo systemctl start cmd_runner
+# then sudo systemctl status cmd_runner
+
+[Unit]
+Description=Command Runner
+After=network.target auditd.service
+
+[Service]
+WorkingDirectory=/home/invaeg_bm_1/git_repos/python_playground/ft/cmd_runner/
+ExecStart=python3 cmd_runner.py
+KillMode=process
+Restart=on-failure
+RestartPreventExitStatus=255
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
+Alias=cmd_runner.service

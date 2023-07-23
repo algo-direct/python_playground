@@ -1,4 +1,4 @@
-const totp = require("totp-generator");
+const totp = require("/usr/local/lib/node_modules/totp-generator");
 const crypto = require('crypto');
 var querystring = require('querystring');
 // var http = require('http');
@@ -9,7 +9,7 @@ var fs = require('fs');
 
 function send_request_to_get_token(
 
-    request_code, api_key = '817b42a19c3c4e2cb7b964a28ace809f', api_secret_input = '2022.97ad1da690a44886842195e70ed6ee3d39cd920a50483575'
+    request_code, api_key = '895c86921eba455e90464fc8b4532e1c', api_secret_input = '2023.da32b9591a634e0cbe227083b41f8b2b10b8c3229da8a810'
 
 ) {
     const input = api_key + request_code + api_secret_input;

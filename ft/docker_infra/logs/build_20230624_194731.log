@@ -1,0 +1,16 @@
+#1 [internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.1s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 634B 0.0s done
+#2 DONE 0.1s
+Dockerfile:3
+--------------------
+   1 |     
+   2 |     ARG base_python_latest_tag
+   3 | >>> FROM base_python:${base_python_latest_tag}
+   4 |     
+   5 |     RUN npm --global --loglevel info install crypto 
+--------------------
+ERROR: failed to solve: failed to parse stage name "base_python:": invalid reference format

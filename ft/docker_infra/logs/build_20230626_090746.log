@@ -1,0 +1,85 @@
+#1 [internal] load .dockerignore
+#1 transferring context: 2B 0.0s done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 957B 0.0s done
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/base_python:0.0.1
+#3 DONE 0.0s
+
+#4 [ 1/11] FROM docker.io/library/base_python:0.0.1
+#4 DONE 0.0s
+
+#5 [ 5/11] RUN npm --global --loglevel info install express
+#5 CACHED
+
+#6 [ 2/11] RUN npm --global --loglevel info install crypto
+#6 CACHED
+
+#7 [ 4/11] RUN npm --global --loglevel info install eslint-config-standard-with-typescript  @typescript-eslint/eslint-plugin@^5.50.0 eslint@^8.0.1 eslint-plugin-import@^2.25.2 eslint-plugin-n@^15.0.0 eslint-plugin-promise@^6.0.0 typescript
+#7 CACHED
+
+#8 [ 7/11] RUN npm --global --loglevel info install totp-generator
+#8 CACHED
+
+#9 [ 9/11] RUN npm --global --loglevel info install puppeteer
+#9 CACHED
+
+#10 [ 6/11] RUN npm --global --loglevel info install request
+#10 CACHED
+
+#11 [ 3/11] RUN npm --global --loglevel info install sha256
+#11 CACHED
+
+#12 [ 8/11] RUN npm --global --loglevel info install zombie
+#12 CACHED
+
+#13 [10/11] RUN apt-get install -y libnss3 libnspr4 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libasound2
+#13 CACHED
+
+#14 [11/11] RUN npm --global --loglevel info install websocket
+#14 2.907 npm info using npm@9.6.4
+#14 2.918 npm info using node@v20.1.0
+#14 3.468 npm http fetch GET 200 https://registry.npmjs.org/websocket 403ms (cache miss)
+#14 3.651 npm http fetch GET 200 https://registry.npmjs.org/typedarray-to-buffer 146ms (cache miss)
+#14 3.671 npm http fetch GET 200 https://registry.npmjs.org/debug 171ms (cache revalidated)
+#14 3.711 npm http fetch GET 200 https://registry.npmjs.org/es5-ext 207ms (cache revalidated)
+#14 3.748 npm http fetch GET 200 https://registry.npmjs.org/yaeti 238ms (cache miss)
+#14 3.795 npm http fetch GET 200 https://registry.npmjs.org/utf-8-validate 288ms (cache revalidated)
+#14 3.815 npm http fetch GET 200 https://registry.npmjs.org/bufferutil 318ms (cache revalidated)
+#14 4.013 npm http fetch GET 200 https://registry.npmjs.org/node-gyp-build 156ms (cache miss)
+#14 4.022 npm http fetch GET 200 https://registry.npmjs.org/ms 164ms (cache revalidated)
+#14 4.031 npm http fetch GET 200 https://registry.npmjs.org/next-tick 159ms (cache revalidated)
+#14 4.039 npm http fetch GET 200 https://registry.npmjs.org/es6-symbol 170ms (cache revalidated)
+#14 4.050 npm http fetch GET 200 https://registry.npmjs.org/es6-iterator 189ms (cache revalidated)
+#14 4.074 npm http fetch GET 200 https://registry.npmjs.org/is-typedarray 200ms (cache revalidated)
+#14 4.269 npm http fetch GET 200 https://registry.npmjs.org/ext 109ms (cache revalidated)
+#14 4.277 npm http fetch GET 200 https://registry.npmjs.org/d 122ms (cache revalidated)
+#14 4.286 npm http fetch GET 200 https://registry.npmjs.org/d 133ms (cache revalidated)
+#14 4.357 npm http fetch GET 200 https://registry.npmjs.org/type 57ms (cache revalidated)
+#14 5.281 npm http fetch GET 200 https://registry.npmjs.org/typedarray-to-buffer/-/typedarray-to-buffer-3.1.5.tgz 730ms (cache miss)
+#14 5.302 npm http fetch GET 200 https://registry.npmjs.org/yaeti/-/yaeti-0.0.6.tgz 761ms (cache miss)
+#14 5.314 npm http fetch GET 200 https://registry.npmjs.org/node-gyp-build/-/node-gyp-build-4.6.0.tgz 778ms (cache miss)
+#14 5.520 npm http fetch GET 200 https://registry.npmjs.org/websocket/-/websocket-1.0.34.tgz 991ms (cache miss)
+#14 5.689 npm http fetch GET 200 https://registry.npmjs.org/bufferutil/-/bufferutil-4.0.7.tgz 1132ms (cache miss)
+#14 5.779 npm http fetch GET 200 https://registry.npmjs.org/utf-8-validate/-/utf-8-validate-5.0.10.tgz 1236ms (cache miss)
+#14 6.477 npm info run bufferutil@4.0.7 install node_modules/websocket/node_modules/bufferutil node-gyp-build
+#14 6.795 npm info run bufferutil@4.0.7 install { code: 0, signal: null }
+#14 6.801 npm info run utf-8-validate@5.0.10 install node_modules/websocket/node_modules/utf-8-validate node-gyp-build
+#14 7.046 npm info run utf-8-validate@5.0.10 install { code: 0, signal: null }
+#14 7.054 npm info run es5-ext@0.10.62 postinstall node_modules/websocket/node_modules/es5-ext  node -e "try{require('./_postinstall')}catch(e){}" || exit 0
+#14 7.243 npm info run es5-ext@0.10.62 postinstall { code: 0, signal: null }
+#14 7.260 
+#14 7.260 added 17 packages in 5s
+#14 7.265 npm info ok 
+#14 DONE 7.5s
+
+#15 exporting to image
+#15 exporting layers
+#15 exporting layers 0.5s done
+#15 writing image sha256:1441b25ffe10c6c8ff09a479760758724f050d01e3912ad541a4f4dc932d3193
+#15 writing image sha256:1441b25ffe10c6c8ff09a479760758724f050d01e3912ad541a4f4dc932d3193 done
+#15 naming to docker.io/library/flat_trade_token_generator:0.0.1 0.0s done
+#15 DONE 0.6s

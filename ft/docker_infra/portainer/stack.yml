@@ -1,0 +1,84 @@
+# DO NOT run docer compose on this YML file
+# This file should be copy pased to portainer dashboard to create stack and/or use API to maintain stack
+
+---
+version: '3'
+
+volumes:
+  prometheus-data:
+    driver: local
+  grafana-data:
+    driver: local
+  kanboard_data:
+    driver: local
+  kanboard_plugins:
+    driver: local
+  kanboard_ssl:
+    driver: local
+
+services:
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    ports:
+      - 9090:9090
+    volumes:
+      - ./etc/prometheus:/etc/prometheus # NOTE: When you use ./ path, then it uses /data/compose/3/ path on the host
+                                         # So ./etc/prometheus is same as /data/compose/3/etc/prometheus
+                                         # That is why need to run {sudo ln -s `pwd`/etc /data/compose/3/} one time on the host
+      - prometheus-data:/prometheus
+    command:
+      - '--storage.tsdb.path=/prometheus'
+      - '--storage.tsdb.retention.time=1000d'
+      - '--config.file=/etc/prometheus/prometheus.yml'
+    restart: unless-stopped
+
+  node_exporter:
+    image: quay.io/prometheus/node-exporter:v1.6.0
+    container_name: node_exporter
+    command: "--path.rootfs=/host"
+    pid: host
+    restart: unless-stopped
+    volumes:
+      - /:/host:ro,rslave
+
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:v0.47.2  
+    container_name: cadvisor
+    ports:
+      - 8080:8080
+    network_mode: host
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:ro
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+      - /dev/disk/:/dev/disk:ro
+    devices:
+      - /dev/kmsg
+    privileged: true
+    deploy:
+      mode: replicated
+      replicas: 0 # To avoid CPU usage, it is using a lot of CPU, should be scaled up to 1 instance when needed
+    restart: unless-stopped
+
+  grafana:
+    image: grafana/grafana-oss:latest
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana-data:/var/lib/grafana
+    restart: unless-stopped
+
+  kanboard:
+    image: kanboard/kanboard:v1.2.30
+    ports:
+     - "10000:80"
+     - "10443:443"
+    volumes:
+     - kanboard_data:/var/www/app/data
+     - kanboard_plugins:/var/www/app/plugins
+     - kanboard_ssl:/etc/nginx/ssl
+    environment:
+      - PLUGIN_INSTALLER=true

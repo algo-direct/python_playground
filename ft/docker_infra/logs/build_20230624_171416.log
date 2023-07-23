@@ -1,0 +1,442 @@
+#1 [internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 453B 0.0s done
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/node:20.1.0-bullseye
+#3 DONE 1.5s
+
+#4 [1/4] FROM docker.io/library/node:20.1.0-bullseye@sha256:0efc3ef3fea2822c9d16da084c40181ed7f74b6f45141100580f9887ccc8e9a1
+#4 DONE 0.0s
+
+#5 [3/4] RUN apt-get update
+#5 CACHED
+
+#6 [2/4] WORKDIR /app
+#6 CACHED
+
+#7 [4/4] RUN apt-get install -y build-essential cmake git openssh-server gdb pkg-config valgrind systemd-coredump
+#7 CACHED
+
+#8 exporting to image
+#8 exporting layers done
+#8 writing image sha256:520fbe4956f762f320ef365b50d55a9ff78780d770ee8cb7f7e76feedb3ca8ef 0.0s done
+#8 naming to docker.io/library/base_os:0.0.1 0.0s done
+#8 DONE 0.0s
+#1 [internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 3.76kB 0.0s done
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/base_os:0.0.1
+#3 DONE 0.0s
+
+#4 [ 1/77] FROM docker.io/library/base_os:0.0.1
+#4 DONE 0.0s
+
+#5 [53/77] RUN npm --global --loglevel info install vue
+#5 CACHED
+
+#6 [62/77] RUN npm --global --loglevel info install object-assign
+#6 CACHED
+
+#7 [16/77] RUN npm --global --loglevel info install grunt
+#7 CACHED
+
+#8 [60/77] RUN npm --global --loglevel info install rxjs
+#8 CACHED
+
+#9 [71/77] RUN npm --global --loglevel info install superagent
+#9 CACHED
+
+#10 [26/77] RUN npm --global --loglevel info install request
+#10 CACHED
+
+#11 [54/77] RUN npm --global --loglevel info install tslib
+#11 CACHED
+
+#12 [23/77] RUN npm --global --loglevel info install winston
+#12 CACHED
+
+#13 [40/77] RUN npm --global --loglevel info install chalk
+#13 CACHED
+
+#14 [ 5/77] RUN npm --global --loglevel info install eslint
+#14 CACHED
+
+#15 [11/77] RUN npm --global --loglevel info install molecular
+#15 CACHED
+
+#16 [24/77] RUN npm --global --loglevel info install sharp
+#16 CACHED
+
+#17 [29/77] RUN npm --global --loglevel info install underscore
+#17 CACHED
+
+#18 [42/77] RUN npm --global --loglevel info install body-parser
+#18 CACHED
+
+#19 [36/77] RUN npm --global --loglevel info install marked
+#19 CACHED
+
+#20 [65/77] RUN npm --global --loglevel info install eslint-plugin-import
+#20 CACHED
+
+#21 [41/77] RUN npm --global --loglevel info install debug
+#21 CACHED
+
+#22 [59/77] RUN npm --global --loglevel info install totp
+#22 CACHED
+
+#23 [44/77] RUN npm --global --loglevel info install bunyan
+#23 CACHED
+
+#24 [58/77] RUN npm --global --loglevel info install uuid
+#24 CACHED
+
+#25 [ 7/77] RUN npm --global --loglevel info install nodemon
+#25 CACHED
+
+#26 [ 9/77] RUN npm --global --loglevel info install nodemailer
+#26 CACHED
+
+#27 [18/77] RUN npm --global --loglevel info install socket.io
+#27 CACHED
+
+#28 [20/77] RUN npm --global --loglevel info install redux
+#28 CACHED
+
+#29 [73/77] RUN npm --global --loglevel info install vue-router
+#29 CACHED
+
+#30 [31/77] RUN npm --global --loglevel info install hapi
+#30 CACHED
+
+#31 [ 4/77] RUN npm --global --loglevel info install lodash
+#31 CACHED
+
+#32 [56/77] RUN npm --global --loglevel info install glob
+#32 CACHED
+
+#33 [69/77] RUN npm --global --loglevel info install fs
+#33 CACHED
+
+#34 [43/77] RUN npm --global --loglevel info install husky
+#34 CACHED
+
+#35 [61/77] RUN npm --global --loglevel info install redux
+#35 CACHED
+
+#36 [66/77] RUN npm --global --loglevel info install eslint-plugin-react
+#36 CACHED
+
+#37 [28/77] RUN npm --global --loglevel info install bower
+#37 CACHED
+
+#38 [33/77] RUN npm --global --loglevel info install sqlite
+#38 CACHED
+
+#39 [34/77] RUN npm --global --loglevel info install webpack
+#39 CACHED
+
+#40 [64/77] RUN npm --global --loglevel info install handlebars
+#40 CACHED
+
+#41 [17/77] RUN npm --global --loglevel info install pm2
+#41 CACHED
+
+#42 [ 6/77] RUN npm --global --loglevel info install morgan
+#42 CACHED
+
+#43 [57/77] RUN npm --global --loglevel info install yargs
+#43 CACHED
+
+#44 [38/77] RUN npm --global --loglevel info install jsdom
+#44 CACHED
+
+#45 [27/77] RUN npm --global --loglevel info install browserify
+#45 CACHED
+
+#46 [15/77] RUN npm --global --loglevel info install grunt-cli
+#46 CACHED
+
+#47 [46/77] RUN npm --global --loglevel info install flat
+#47 CACHED
+
+#48 [67/77] RUN npm --global --loglevel info install url-loader
+#48 CACHED
+
+#49 [50/77] RUN npm --global --loglevel info install react-dom
+#49 CACHED
+
+#50 [39/77] RUN npm --global --loglevel info install moment
+#50 CACHED
+
+#51 [19/77] RUN npm --global --loglevel info install react
+#51 CACHED
+
+#52 [32/77] RUN npm --global --loglevel info install pug
+#52 CACHED
+
+#53 [47/77] RUN npm --global --loglevel info install json5
+#53 CACHED
+
+#54 [76/77] RUN npm --global --loglevel info install cookie-parser
+#54 CACHED
+
+#55 [37/77] RUN npm --global --loglevel info install graphicsmagick
+#55 CACHED
+
+#56 [22/77] RUN npm --global --loglevel info install passport
+#56 CACHED
+
+#57 [49/77] RUN npm --global --loglevel info install compression
+#57 CACHED
+
+#58 [63/77] RUN npm --global --loglevel info install file-loader
+#58 CACHED
+
+#59 [30/77] RUN npm --global --loglevel info install uglifyjs2
+#59 CACHED
+
+#60 [52/77] RUN npm --global --loglevel info install moment
+#60 CACHED
+
+#61 [10/77] RUN npm --global --loglevel info install gulp
+#61 CACHED
+
+#62 [12/77] RUN npm --global --loglevel info install agenda
+#62 CACHED
+
+#63 [ 8/77] RUN npm --global --loglevel info install restify
+#63 CACHED
+
+#64 [25/77] RUN npm --global --loglevel info install puppeteer
+#64 CACHED
+
+#65 [21/77] RUN npm --global --loglevel info install dotenv
+#65 CACHED
+
+#66 [70/77] RUN npm --global --loglevel info install ejs
+#66 CACHED
+
+#67 [51/77] RUN npm --global --loglevel info install fs-extra
+#67 CACHED
+
+#68 [72/77] RUN npm --global --loglevel info install vue
+#68 CACHED
+
+#69 [68/77] RUN npm --global --loglevel info install ws
+#69 CACHED
+
+#70 [ 2/77] RUN npm set progress=true
+#70 CACHED
+
+#71 [75/77] RUN npm --global --loglevel info install mime
+#71 CACHED
+
+#72 [55/77] RUN npm --global --loglevel info install mkdirp
+#72 CACHED
+
+#73 [74/77] RUN npm --global --loglevel info install chokidar
+#73 CACHED
+
+#74 [ 3/77] RUN npm --global --loglevel info install express
+#74 CACHED
+
+#75 [14/77] RUN npm --global --loglevel info install axios
+#75 CACHED
+
+#76 [45/77] RUN npm --global --loglevel info install debug
+#76 CACHED
+
+#77 [13/77] RUN npm --global --loglevel info install async
+#77 CACHED
+
+#78 [48/77] RUN npm --global --loglevel info install helmet
+#78 CACHED
+
+#79 [35/77] RUN npm --global --loglevel info install angular
+#79 CACHED
+
+#80 [77/77] RUN npm --global --loglevel info install speakeasy
+#80 CACHED
+
+#81 exporting to image
+#81 exporting layers done
+#81 writing image sha256:8ca7b37c4d39af5dd20644943b4acd3124874863a458e535c42e84061ae2f948 done
+#81 naming to docker.io/library/base_node_js:0.0.1 done
+#81 DONE 0.0s
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 272B done
+#1 DONE 0.0s
+
+#2 [internal] load .dockerignore
+#2 transferring context: 2B done
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/base_node_js:0.0.1
+#3 DONE 0.0s
+
+#4 [1/4] FROM docker.io/library/base_node_js:0.0.1
+#4 CACHED
+
+#5 [2/4] RUN apt-get install -y --no-install-recommends     python3     python3-pip
+#5 1.120 Reading package lists...
+#5 2.623 Building dependency tree...
+#5 2.917 Reading state information...
+#5 3.548 python3 is already the newest version (3.9.2-3).
+#5 3.548 python3 set to manually installed.
+#5 3.548 The following additional packages will be installed:
+#5 3.550   python-pip-whl python3-pkg-resources python3-setuptools python3-wheel
+#5 3.556 Suggested packages:
+#5 3.557   python-setuptools-doc
+#5 3.558 Recommended packages:
+#5 3.560   python3-dev
+#5 3.787 The following NEW packages will be installed:
+#5 3.788   python-pip-whl python3-pip python3-pkg-resources python3-setuptools
+#5 3.789   python3-wheel
+#5 3.970 0 upgraded, 5 newly installed, 0 to remove and 0 not upgraded.
+#5 3.970 Need to get 2865 kB of archives.
+#5 3.970 After this operation, 5895 kB of additional disk space will be used.
+#5 3.970 Get:1 http://deb.debian.org/debian bullseye/main amd64 python-pip-whl all 20.3.4-4+deb11u1 [1948 kB]
+#5 4.160 Get:2 http://deb.debian.org/debian bullseye/main amd64 python3-pkg-resources all 52.0.0-4 [190 kB]
+#5 4.181 Get:3 http://deb.debian.org/debian bullseye/main amd64 python3-setuptools all 52.0.0-4 [366 kB]
+#5 4.205 Get:4 http://deb.debian.org/debian bullseye/main amd64 python3-wheel all 0.34.2-1 [24.0 kB]
+#5 4.211 Get:5 http://deb.debian.org/debian bullseye/main amd64 python3-pip all 20.3.4-4+deb11u1 [337 kB]
+#5 4.737 debconf: delaying package configuration, since apt-utils is not installed
+#5 4.868 Fetched 2865 kB in 0s (6966 kB/s)
+#5 4.930 Selecting previously unselected package python-pip-whl.
+#5 4.933 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 30751 files and directories currently installed.)
+#5 5.154 Preparing to unpack .../python-pip-whl_20.3.4-4+deb11u1_all.deb ...
+#5 5.177 Unpacking python-pip-whl (20.3.4-4+deb11u1) ...
+#5 5.525 Selecting previously unselected package python3-pkg-resources.
+#5 5.535 Preparing to unpack .../python3-pkg-resources_52.0.0-4_all.deb ...
+#5 5.544 Unpacking python3-pkg-resources (52.0.0-4) ...
+#5 5.683 Selecting previously unselected package python3-setuptools.
+#5 5.693 Preparing to unpack .../python3-setuptools_52.0.0-4_all.deb ...
+#5 5.716 Unpacking python3-setuptools (52.0.0-4) ...
+#5 5.928 Selecting previously unselected package python3-wheel.
+#5 5.938 Preparing to unpack .../python3-wheel_0.34.2-1_all.deb ...
+#5 5.948 Unpacking python3-wheel (0.34.2-1) ...
+#5 6.082 Selecting previously unselected package python3-pip.
+#5 6.091 Preparing to unpack .../python3-pip_20.3.4-4+deb11u1_all.deb ...
+#5 6.114 Unpacking python3-pip (20.3.4-4+deb11u1) ...
+#5 6.378 Setting up python3-pkg-resources (52.0.0-4) ...
+#5 7.116 Setting up python3-setuptools (52.0.0-4) ...
+#5 8.195 Setting up python3-wheel (0.34.2-1) ...
+#5 8.679 Setting up python-pip-whl (20.3.4-4+deb11u1) ...
+#5 8.702 Setting up python3-pip (20.3.4-4+deb11u1) ...
+#5 DONE 9.9s
+
+#6 [3/4] RUN pip3 install nibabel pydicom matplotlib pillow
+#6 4.913 Collecting nibabel
+#6 4.983   Downloading nibabel-5.1.0-py3-none-any.whl (3.3 MB)
+#6 5.800 Collecting pydicom
+#6 5.823   Downloading pydicom-2.4.1-py3-none-any.whl (1.8 MB)
+#6 7.069 Collecting matplotlib
+#6 7.096   Downloading matplotlib-3.7.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.6 MB)
+#6 9.998 Collecting pillow
+#6 10.02   Downloading Pillow-9.5.0-cp39-cp39-manylinux_2_28_x86_64.whl (3.4 MB)
+#6 10.79 Collecting kiwisolver>=1.0.1
+#6 10.82   Downloading kiwisolver-1.4.4-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (1.6 MB)
+#6 11.08 Collecting cycler>=0.10
+#6 11.10   Downloading cycler-0.11.0-py3-none-any.whl (6.4 kB)
+#6 11.48 Collecting pyparsing>=2.3.1
+#6 11.50   Downloading pyparsing-3.1.0-py3-none-any.whl (102 kB)
+#6 12.02 Collecting contourpy>=1.0.1
+#6 12.05   Downloading contourpy-1.1.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (300 kB)
+#6 12.21 Collecting python-dateutil>=2.7
+#6 12.23   Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+#6 12.57 Collecting importlib-resources>=3.2.0
+#6 12.59   Downloading importlib_resources-5.12.0-py3-none-any.whl (36 kB)
+#6 14.09 Collecting numpy>=1.20
+#6 14.11   Downloading numpy-1.25.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.7 MB)
+#6 16.76 Collecting fonttools>=4.22.0
+#6 16.78   Downloading fonttools-4.40.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.4 MB)
+#6 17.46 Collecting packaging>=20.0
+#6 17.48   Downloading packaging-23.1-py3-none-any.whl (48 kB)
+#6 18.05 Collecting zipp>=3.1.0
+#6 18.07   Downloading zipp-3.15.0-py3-none-any.whl (6.8 kB)
+#6 18.26 Collecting six>=1.5
+#6 18.27   Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+#6 19.04 Installing collected packages: zipp, six, numpy, python-dateutil, pyparsing, pillow, packaging, kiwisolver, importlib-resources, fonttools, cycler, contourpy, pydicom, nibabel, matplotlib
+#6 35.87 Successfully installed contourpy-1.1.0 cycler-0.11.0 fonttools-4.40.0 importlib-resources-5.12.0 kiwisolver-1.4.4 matplotlib-3.7.1 nibabel-5.1.0 numpy-1.25.0 packaging-23.1 pillow-9.5.0 pydicom-2.4.1 pyparsing-3.1.0 python-dateutil-2.8.2 six-1.16.0 zipp-3.15.0
+#6 DONE 36.6s
+
+#7 [4/4] RUN pip3 install med2image
+#7 4.772 Collecting med2image
+#7 5.322   Downloading med2image-2.6.6.tar.gz (22 kB)
+#7 5.978 Requirement already satisfied: matplotlib in /usr/local/lib/python3.9/dist-packages (from med2image) (3.7.1)
+#7 5.981 Requirement already satisfied: nibabel in /usr/local/lib/python3.9/dist-packages (from med2image) (5.1.0)
+#7 5.984 Requirement already satisfied: numpy in /usr/local/lib/python3.9/dist-packages (from med2image) (1.25.0)
+#7 6.335 Collecting pfmisc
+#7 8.305   Downloading pfmisc-2.2.14.tar.gz (41 kB)
+#7 8.892 Requirement already satisfied: pillow in /usr/local/lib/python3.9/dist-packages (from med2image) (9.5.0)
+#7 8.896 Requirement already satisfied: pydicom in /usr/local/lib/python3.9/dist-packages (from med2image) (2.4.1)
+#7 8.926 Requirement already satisfied: importlib-resources>=3.2.0 in /usr/local/lib/python3.9/dist-packages (from matplotlib->med2image) (5.12.0)
+#7 8.929 Requirement already satisfied: kiwisolver>=1.0.1 in /usr/local/lib/python3.9/dist-packages (from matplotlib->med2image) (1.4.4)
+#7 8.932 Requirement already satisfied: pyparsing>=2.3.1 in /usr/local/lib/python3.9/dist-packages (from matplotlib->med2image) (3.1.0)
+#7 8.936 Requirement already satisfied: python-dateutil>=2.7 in /usr/local/lib/python3.9/dist-packages (from matplotlib->med2image) (2.8.2)
+#7 8.940 Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.9/dist-packages (from matplotlib->med2image) (23.1)
+#7 8.943 Requirement already satisfied: fonttools>=4.22.0 in /usr/local/lib/python3.9/dist-packages (from matplotlib->med2image) (4.40.0)
+#7 8.946 Requirement already satisfied: cycler>=0.10 in /usr/local/lib/python3.9/dist-packages (from matplotlib->med2image) (0.11.0)
+#7 8.950 Requirement already satisfied: contourpy>=1.0.1 in /usr/local/lib/python3.9/dist-packages (from matplotlib->med2image) (1.1.0)
+#7 9.137 Requirement already satisfied: zipp>=3.1.0 in /usr/local/lib/python3.9/dist-packages (from importlib-resources>=3.2.0->matplotlib->med2image) (3.15.0)
+#7 9.199 Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.9/dist-packages (from python-dateutil>=2.7->matplotlib->med2image) (1.16.0)
+#7 9.746 Collecting pudb
+#7 9.763   Downloading pudb-2022.1.3.tar.gz (220 kB)
+#7 10.58 Collecting jedi<1,>=0.18
+#7 10.61   Downloading jedi-0.18.2-py2.py3-none-any.whl (1.6 MB)
+#7 11.05 Collecting pygments>=2.7.4
+#7 11.07   Downloading Pygments-2.15.1-py3-none-any.whl (1.1 MB)
+#7 11.29 Collecting urwid>=1.1.1
+#7 11.30   Downloading urwid-2.1.2.tar.gz (634 kB)
+#7 12.56 Collecting urwid_readline
+#7 12.58   Downloading urwid_readline-0.13.tar.gz (7.9 kB)
+#7 12.60   Installing build dependencies: started
+#7 20.26   Installing build dependencies: finished with status 'done'
+#7 20.26   Getting requirements to build wheel: started
+#7 20.76   Getting requirements to build wheel: finished with status 'done'
+#7 20.77     Preparing wheel metadata: started
+#7 21.32     Preparing wheel metadata: finished with status 'done'
+#7 21.55 Collecting parso<0.9.0,>=0.8.0
+#7 21.58   Downloading parso-0.8.3-py2.py3-none-any.whl (100 kB)
+#7 21.68 Building wheels for collected packages: med2image, pfmisc, pudb, urwid, urwid-readline
+#7 21.68   Building wheel for med2image (setup.py): started
+#7 22.37   Building wheel for med2image (setup.py): finished with status 'done'
+#7 22.37   Created wheel for med2image: filename=med2image-2.6.6-py3-none-any.whl size=18867 sha256=a13c7fa96eba7537a3e5acc2c531a118022d4d9d660a99517ed896e3dc9ab61c
+#7 22.37   Stored in directory: /root/.cache/pip/wheels/bf/eb/9e/51d5315dfaa4aa6d4ee675987138c18464ca1d2eeeb6a09abf
+#7 22.38   Building wheel for pfmisc (setup.py): started
+#7 23.08   Building wheel for pfmisc (setup.py): finished with status 'done'
+#7 23.09   Created wheel for pfmisc: filename=pfmisc-2.2.14-py3-none-any.whl size=45416 sha256=3778075899d29a15350092cd1185d8c182732fca91135c1ce2e5c7ca892d0dc9
+#7 23.09   Stored in directory: /root/.cache/pip/wheels/81/fd/50/3f15d2d53b3b80edb2a197d55307be153d1b0a25f9885a0536
+#7 23.10   Building wheel for pudb (setup.py): started
+#7 23.85   Building wheel for pudb (setup.py): finished with status 'done'
+#7 23.85   Created wheel for pudb: filename=pudb-2022.1.3-py3-none-any.whl size=70240 sha256=f3795d1eb2d5c8f82eb16c3cd98a911ee5e857a2134a8e8cb4664ccdf11317c9
+#7 23.85   Stored in directory: /root/.cache/pip/wheels/32/4b/3c/c5f1c8ef3675e4a5f4dadfc5b006320a3291b7b8491924d20f
+#7 23.86   Building wheel for urwid (setup.py): started
+#7 24.91   Building wheel for urwid (setup.py): finished with status 'done'
+#7 24.92   Created wheel for urwid: filename=urwid-2.1.2-py3-none-any.whl size=235020 sha256=bbbc19b2ab1eee4528bdb0dd58d8fc79c68c4e8e05cf07d92c327f2bee5544b0
+#7 24.92   Stored in directory: /root/.cache/pip/wheels/44/ec/04/2c1080c3ee4e80e76d662ac35f0594a2a86f9df12095b05cb3
+#7 24.93   Building wheel for urwid-readline (PEP 517): started
+#7 25.58   Building wheel for urwid-readline (PEP 517): finished with status 'done'
+#7 25.58   Created wheel for urwid-readline: filename=urwid_readline-0.13-py3-none-any.whl size=7550 sha256=3a18801c105fdb482dbfd4d7604f9c4aff01285250373d3d3729c8b3759c2283
+#7 25.58   Stored in directory: /root/.cache/pip/wheels/6c/df/c9/b2af60cbb582e2f9784d5693f9cecb49d802ff54e0ce82af09
+#7 25.59 Successfully built med2image pfmisc pudb urwid urwid-readline
+#7 25.78 Installing collected packages: urwid, parso, urwid-readline, pygments, jedi, pudb, pfmisc, med2image
+#7 30.40 Successfully installed jedi-0.18.2 med2image-2.6.6 parso-0.8.3 pfmisc-2.2.14 pudb-2022.1.3 pygments-2.15.1 urwid-2.1.2 urwid-readline-0.13
+#7 DONE 31.1s
+
+#8 exporting to image
+#8 exporting layers
+#8 exporting layers 5.6s done
+#8 writing image sha256:78aed3d6cc741ebee74b376663748bebf0706af88b52b8c0fdb27a4b036e7f25 done
+#8 naming to docker.io/library/base_python:0.0.1 0.0s done
+#8 DONE 5.7s

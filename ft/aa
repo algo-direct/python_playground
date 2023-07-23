@@ -1,0 +1,35 @@
+resp: {"res":{"statusCode":200,"body":"{\"stat\":\"Ok\",\"values\":
+[{\"
+exch\":\"NSE\",\"token\":\"3045\",\"tsym\":\"SBIN-EQ\",\"cname\":\"STATE BANK OF INDIA\",\"instname\":\"EQ\",\"pp\":\"2\",\"ls\":\"1\",\"ti\":\"0.05\"},{\"
+exch\":\"NSE\",\"token\":\"21808\",\"tsym\":\"SBILIFE-EQ\",\"cname\":\"SBI LIFE INSURANCE CO LTD\",\"instname\":\"EQ\",\"pp\":\"2\",\"ls\":\"1\",\"ti\":\"0.05\"},{\"
+exch\":\"NSE\",\"token\":\"7218\",\"tsym\":\"SBIETFQLTY-EQ\",\"cname\":\"SBIAMC - SBIETFQLTY\",\"instname\":\"EQ\",\"pp\":\"2\",\"ls\":\"1\",\"ti\":\"0.01\"},{\"
+exch\":\"NSE\",\"token\":\"722\",\"tsym\":\"SBIETFPB-EQ\",\"cname\":\"SBIAMC - SBIETFPB\",\"instname\":\"EQ\",\"pp\":\"2\",\"ls\":\"1\",\"ti\":\"0.01\"},{\"
+exch\":\"NSE\",\"token\":\"740\",\"tsym\":\"SBIETFIT-EQ\",\"cname\":\"SBIAMC - SBIETFIT\",\"instname\":\"EQ\",\"pp\":\"2\",\"ls\":\"1\",\"ti\":\"0.01\"},{\"
+exch\":\"NSE\",\"token\":\"5168\",\"tsym\":\"SBIETFCON-EQ\",\"cname\":\"SBIAMC - SBIETFCON\",\"instname\":\"EQ\",\"pp\":\"2\",\"ls\":\"1\",\"ti\":\"0.01\"},{\"
+exch\":\"NSE\",\"token\":\"17971\",\"tsym\":\"SBICARD-EQ\",\"cname\":\"SBI CARDS & PAY SER LTD\",\"instname\":\"EQ\",\"pp\":\"2\",\"ls\":\"1\",\"ti\":\"0.05\"},{\"
+exch\":\"NSE\",\"token\":\"12740\",\"tsym\":\"SBIN-BL\",\"cname\":\"STATE BANK OF INDIA\",\"instname\":\"BL\",\"pp\":\"2\",\"ls\":\"999999999\",\"ti\":\"0.05\"},{\"
+exch\":\"NSE\",\"token\":\"21811\",\"tsym\":\"SBILIFE-BL\",\"cname\":\"SBI LIFE INSURANCE CO LTD\",\"instname\":\"BL\",\"pp\":\"2\",\"ls\":\"999999999\",\"ti\":\"0.05\"},{\"
+exch\":\"NSE\",\"token\":\"7219\",\"tsym\":\"SBIETFQLTY-BL\",\"cname\":\"SBIAMC - SBIETFQLTY\",\"instname\":\"BL\",\"pp\":\"2\",\"ls\":\"999999999\",\"ti\":\"0.01\"},{\"
+exch\":\"NSE\",\"token\":\"728\",\"tsym\":\"SBIETFPB-BL\",\"cname\":\"SBIAMC - SBIETFPB\",\"instname\":\"BL\",\"pp\":\"2\",\"ls\":\"999999999\",\"ti\":\"0.01\"},{\"
+exch\":\"NSE\",\"token\":\"745\",\"tsym\":\"SBIETFIT-BL\",\"cname\":\"SBIAMC - SBIETFIT\",\"instname\":\"BL\",\"pp\":\"2\",\"ls\":\"999999999\",\"ti\":\"0.01\"},{\"
+exch\":\"NSE\",\"token\":\"5171\",\"tsym\":\"SBIETFCON-BL\",\"cname\":\"SBIAMC - SBIETFCON\",\"instname\":\"BL\",\"pp\":\"2\",\"ls\":\"999999999\",\"ti\":\"0.01\"},{\"
+exch\":\"NSE\",\"token\":\"17974\",\"tsym\":\"SBICARD-BL\",\"cname\":\"SBI CARDS & PAY SER LTD\",\"instname\":\"BL\",\"pp\":\"2\",\"ls\":\"999999999\",\"ti\":\"0.05\"}]}",
+
+"headers":{"date":"Mon, 26 Jun 2023 02:42:55 GMT","content-type":"application/json","content-length":"1863","connection":"keep-alive","access-control-allow-origin":"*","cf-cache-status":"DYNAMIC","report-to":"{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=1E%2BPidDCxwIRM5XvJEAJQ8qdddNo9xNoSZUovWwoatnGGcWLbazuz9DjU6rQlpEgDmPjBI6Mtpq6jQCCKSZcC4%2BOek1rIYBWWqNUXAwnWNLHh2bFpUppAd9QYRXriCPlgYChESgxcqg%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}","nel":"{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}","server":"cloudflare","cf-ray":"7dd2198a6af685fc-BOM"},
+"request":{"uri":{"protocol":"https:","slashes":true,"auth":null,"host":"piconnect.flattrade.in","port":443,"hostname":"piconnect.flattrade.in","hash":null,"search":null,"query":null,"pathname":"/PiConnectTP/SearchScrip","path":"/PiConnectTP/SearchScrip","href":"https://piconnect.flattrade.in/PiConnectTP/SearchScrip"},"method":"POST","headers":{"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:24.0) Gecko/20100101 Firefox/24.0","Content-Type":"application/x-www-form-urlencoded","content-length":121}}},
+"body":"{\"stat\":\"Ok\",\"values\":[{\"
+exch\":\"NSE\",\"token\":\"3045\",\"tsym\":\"SBIN-EQ\",\"cname\":\"STATE BANK OF INDIA\",\"instname\":\"EQ\",\"pp\":\"2\",\"ls\":\"1\",\"ti\":\"0.05\"},{\"
+exch\":\"NSE\",\"token\":\"21808\",\"tsym\":\"SBILIFE-EQ\",\"cname\":\"SBI LIFE INSURANCE CO LTD\",\"instname\":\"EQ\",\"pp\":\"2\",\"ls\":\"1\",\"ti\":\"0.05\"},{\"
+exch\":\"NSE\",\"token\":\"7218\",\"tsym\":\"SBIETFQLTY-EQ\",\"cname\":\"SBIAMC - SBIETFQLTY\",\"instname\":\"EQ\",\"pp\":\"2\",\"ls\":\"1\",\"ti\":\"0.01\"},{\"
+exch\":\"NSE\",\"token\":\"722\",\"tsym\":\"SBIETFPB-EQ\",\"cname\":\"SBIAMC - SBIETFPB\",\"instname\":\"EQ\",\"pp\":\"2\",\"ls\":\"1\",\"ti\":\"0.01\"},{\"
+exch\":\"NSE\",\"token\":\"740\",\"tsym\":\"SBIETFIT-EQ\",\"cname\":\"SBIAMC - SBIETFIT\",\"instname\":\"EQ\",\"pp\":\"2\",\"ls\":\"1\",\"ti\":\"0.01\"},{\"
+exch\":\"NSE\",\"token\":\"5168\",\"tsym\":\"SBIETFCON-EQ\",\"cname\":\"SBIAMC - SBIETFCON\",\"instname\":\"EQ\",\"pp\":\"2\",\"ls\":\"1\",\"ti\":\"0.01\"},{\"
+exch\":\"NSE\",\"token\":\"17971\",\"tsym\":\"SBICARD-EQ\",\"cname\":\"SBI CARDS & PAY SER LTD\",\"instname\":\"EQ\",\"pp\":\"2\",\"ls\":\"1\",\"ti\":\"0.05\"},{\"
+exch\":\"NSE\",\"token\":\"12740\",\"tsym\":\"SBIN-BL\",\"cname\":\"STATE BANK OF INDIA\",\"instname\":\"BL\",\"pp\":\"2\",\"ls\":\"999999999\",\"ti\":\"0.05\"},{\"
+exch\":\"NSE\",\"token\":\"21811\",\"tsym\":\"SBILIFE-BL\",\"cname\":\"SBI LIFE INSURANCE CO LTD\",\"instname\":\"BL\",\"pp\":\"2\",\"ls\":\"999999999\",\"ti\":\"0.05\"},{\"
+exch\":\"NSE\",\"token\":\"7219\",\"tsym\":\"SBIETFQLTY-BL\",\"cname\":\"SBIAMC - SBIETFQLTY\",\"instname\":\"BL\",\"pp\":\"2\",\"ls\":\"999999999\",\"ti\":\"0.01\"},{\"
+exch\":\"NSE\",\"token\":\"728\",\"tsym\":\"SBIETFPB-BL\",\"cname\":\"SBIAMC - SBIETFPB\",\"instname\":\"BL\",\"pp\":\"2\",\"ls\":\"999999999\",\"ti\":\"0.01\"},{\"
+exch\":\"NSE\",\"token\":\"745\",\"tsym\":\"SBIETFIT-BL\",\"cname\":\"SBIAMC - SBIETFIT\",\"instname\":\"BL\",\"pp\":\"2\",\"ls\":\"999999999\",\"ti\":\"0.01\"},{\"
+exch\":\"NSE\",\"token\":\"5171\",\"tsym\":\"SBIETFCON-BL\",\"cname\":\"SBIAMC - SBIETFCON\",\"instname\":\"BL\",\"pp\":\"2\",\"ls\":\"999999999\",\"ti\":\"0.01\"},{\"
+exch\":\"NSE\",\"token\":\"17974\",\"tsym\":\"SBICARD-BL\",\"cname\":\"SBI CARDS & PAY SER LTD\",\"instname\":\"BL\",\"pp\":\"2\",\"ls\":\"999999999\",\"ti\":\"0.05\"}]}"}
+all done [90mundefined[39m

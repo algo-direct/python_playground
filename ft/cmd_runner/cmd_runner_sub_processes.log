@@ -1,0 +1,15 @@
+2023-07-23_07:56:49 pid:1625795; INFO: [cmd_runner_sub_proc.py:12 -                  <module>() ] Starting cmd_runner_sub_proc: ['cmd_runner_sub_proc.py', '1.json']
+2023-07-23_07:56:49 pid:1625795; INFO: [cmd_runner_sub_proc.py:22 -                  <module>() ] Running cmd: {'cmd_id': 'zzz', 'timeout': '7', 'command': 'echo "`date` start" ; sleep 5 ; echo "`date` end"'}
+2023-07-23_07:56:54 pid:1625795; INFO: [cmd_runner_sub_proc.py:41 -                  <module>() ] Finished cmd_id: zzz, exit code: 0
+2023-07-23_07:58:15 pid:1625848; INFO: [cmd_runner_sub_proc.py:12 -                  <module>() ] Starting cmd_runner_sub_proc: ['cmd_runner_sub_proc.py', '1.json']
+2023-07-23_07:58:15 pid:1625848; INFO: [cmd_runner_sub_proc.py:22 -                  <module>() ] Running cmd: {'cmd_id': 'zzz', 'timeout': '7', 'command': 'echo "`date` start" ; sleep 5 ; echo "`date` end"'}
+2023-07-23_07:58:20 pid:1625848; INFO: [cmd_runner_sub_proc.py:41 -                  <module>() ] Finished cmd_id: zzz, exit code: 0
+2023-07-23_08:06:49 pid:1626108; INFO: [cmd_runner_sub_proc.py:12 -                  <module>() ] Starting cmd_runner_sub_proc: ['cmd_runner_sub_proc.py', '1.json']
+2023-07-23_08:06:49 pid:1626108; INFO: [cmd_runner_sub_proc.py:22 -                  <module>() ] Running cmd: {'cmd_id': 'zzz', 'timeout': '7', 'command': 'echo "`date` start" ; sleep 5 ; echo "`date` end"'}
+2023-07-23_08:06:54 pid:1626108; INFO: [cmd_runner_sub_proc.py:41 -                  <module>() ] Finished cmd_id: zzz, exit code: 0
+2023-07-23_08:42:36 pid:1628531; INFO: [cmd_runner_sub_proc.py:12 -                  <module>() ] Starting cmd_runner_sub_proc: ['cmd_runner_sub_proc.py', '1.json']
+2023-07-23_08:42:36 pid:1628531; INFO: [cmd_runner_sub_proc.py:22 -                  <module>() ] Running cmd: {'cmd_id': 'zzz', 'timeout': '7', 'command': 'echo "`date` start" ; sleep 5 ; echo "`date` end"'}
+2023-07-23_08:42:41 pid:1628531; INFO: [cmd_runner_sub_proc.py:41 -                  <module>() ] Finished cmd_id: zzz, exit code: 0
+2023-07-23_08:43:56 pid:1628711; INFO: [cmd_runner_sub_proc.py:12 -                  <module>() ] Starting cmd_runner_sub_proc: ['cmd_runner_sub_proc.py', '2.json']
+2023-07-23_08:43:56 pid:1628711; INFO: [cmd_runner_sub_proc.py:22 -                  <module>() ] Running cmd: {'cmd_id': 'xxx', 'timeout': '7', 'command': 'echo "`date` start" ; sleep 5 ; echo "`date` end"'}
+2023-07-23_08:44:01 pid:1628711; INFO: [cmd_runner_sub_proc.py:41 -                  <module>() ] Finished cmd_id: xxx, exit code: 0

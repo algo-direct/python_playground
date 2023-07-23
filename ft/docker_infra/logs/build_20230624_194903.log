@@ -1,0 +1,47 @@
+#1 [internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.1s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 634B 0.0s done
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/base_python:0.0.1
+#3 DONE 0.0s
+
+#4 [1/7] FROM docker.io/library/base_python:0.0.1
+#4 DONE 0.0s
+
+#5 [3/7] RUN npm --global --loglevel info install sha256
+#5 CACHED
+
+#6 [4/7] RUN npm --global --loglevel info install eslint-config-standard-with-typescript  @typescript-eslint/eslint-plugin@^5.50.0 eslint@^8.0.1 eslint-plugin-import@^2.25.2 eslint-plugin-n@^15.0.0 eslint-plugin-promise@^6.0.0 typescript
+#6 CACHED
+
+#7 [5/7] RUN npm --global --loglevel info install express
+#7 CACHED
+
+#8 [2/7] RUN npm --global --loglevel info install crypto
+#8 CACHED
+
+#9 [6/7] RUN npm --global --loglevel info install request
+#9 CACHED
+
+#10 [7/7] RUN npm --global --loglevel info install totp-generator
+#10 2.433 npm info using npm@9.6.4
+#10 2.444 npm info using node@v20.1.0
+#10 3.992 npm http fetch GET 200 https://registry.npmjs.org/totp-generator 1429ms (cache miss)
+#10 4.118 npm http fetch GET 200 https://registry.npmjs.org/jssha 100ms (cache miss)
+#10 4.347 npm http fetch GET 200 https://registry.npmjs.org/totp-generator/-/totp-generator-0.0.14.tgz 167ms (cache miss)
+#10 4.676 npm http fetch GET 200 https://registry.npmjs.org/jssha/-/jssha-3.3.0.tgz 493ms (cache miss)
+#10 4.700 
+#10 4.700 added 2 packages in 2s
+#10 4.706 npm info ok 
+#10 DONE 4.9s
+
+#11 exporting to image
+#11 exporting layers
+#11 exporting layers 0.3s done
+#11 writing image sha256:a4858fade21b32db69d22411eb18e5556a744ab634172502ce9370c00a7fc521 done
+#11 naming to docker.io/library/flat_trade_token_generator:0.0.1 0.0s done
+#11 DONE 0.3s

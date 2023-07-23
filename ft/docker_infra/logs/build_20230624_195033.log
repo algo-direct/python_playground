@@ -1,0 +1,196 @@
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 683B done
+#1 DONE 0.0s
+
+#2 [internal] load .dockerignore
+#2 transferring context: 2B done
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/base_python:0.0.1
+#3 DONE 0.0s
+
+#4 [1/8] FROM docker.io/library/base_python:0.0.1
+#4 DONE 0.0s
+
+#5 [3/8] RUN npm --global --loglevel info install sha256
+#5 CACHED
+
+#6 [4/8] RUN npm --global --loglevel info install eslint-config-standard-with-typescript  @typescript-eslint/eslint-plugin@^5.50.0 eslint@^8.0.1 eslint-plugin-import@^2.25.2 eslint-plugin-n@^15.0.0 eslint-plugin-promise@^6.0.0 typescript
+#6 CACHED
+
+#7 [5/8] RUN npm --global --loglevel info install express
+#7 CACHED
+
+#8 [6/8] RUN npm --global --loglevel info install request
+#8 CACHED
+
+#9 [2/8] RUN npm --global --loglevel info install crypto
+#9 CACHED
+
+#10 [7/8] RUN npm --global --loglevel info install totp-generator
+#10 CACHED
+
+#11 [8/8] RUN npm --global --loglevel info install zombie
+#11 2.392 npm info using npm@9.6.4
+#11 2.403 npm info using node@v20.1.0
+#11 3.953 npm http fetch GET 200 https://registry.npmjs.org/zombie 1425ms (cache miss)
+#11 4.248 npm http fetch GET 200 https://registry.npmjs.org/debug 257ms (cache revalidated)
+#11 4.335 npm http fetch GET 200 https://registry.npmjs.org/mime 334ms (cache revalidated)
+#11 4.356 npm http fetch GET 200 https://registry.npmjs.org/jsdom 360ms (cache revalidated)
+#11 4.376 npm http fetch GET 200 https://registry.npmjs.org/babel-runtime 391ms (cache miss)
+#11 4.406 npm http fetch GET 200 https://registry.npmjs.org/request 401ms (cache revalidated)
+#11 4.429 npm http fetch GET 200 https://registry.npmjs.org/tough-cookie 422ms (cache revalidated)
+#11 4.476 npm http fetch GET 200 https://registry.npmjs.org/iconv-lite 482ms (cache revalidated)
+#11 4.487 npm http fetch GET 200 https://registry.npmjs.org/ws 478ms (cache revalidated)
+#11 4.511 npm http fetch GET 200 https://registry.npmjs.org/ms 509ms (cache revalidated)
+#11 4.524 npm http fetch GET 200 https://registry.npmjs.org/eventsource 531ms (cache miss)
+#11 4.549 npm http fetch GET 200 https://registry.npmjs.org/lodash 551ms (cache updated)
+#11 4.573 npm http fetch GET 200 https://registry.npmjs.org/bluebird 585ms (cache miss)
+#11 5.250 npm http fetch GET 200 https://registry.npmjs.org/array-equal 540ms (cache miss)
+#11 5.270 npm http fetch GET 200 https://registry.npmjs.org/pn 487ms (cache miss)
+#11 5.447 npm http fetch GET 200 https://registry.npmjs.org/async-limiter 565ms (cache miss)
+#11 5.577 npm http fetch GET 200 https://registry.npmjs.org/request-promise-native 792ms (cache miss)
+#11 5.593 npm http fetch GET 200 https://registry.npmjs.org/acorn 892ms (cache revalidated)
+#11 5.619 npm http fetch GET 200 https://registry.npmjs.org/safer-buffer 931ms (cache revalidated)
+#11 5.626 npm http fetch GET 200 https://registry.npmjs.org/regenerator-runtime 952ms (cache revalidated)
+#11 5.633 npm http fetch GET 200 https://registry.npmjs.org/escodegen 862ms (cache revalidated)
+#11 5.653 npm http fetch GET 200 https://registry.npmjs.org/abab 963ms (cache revalidated)
+#11 5.666 npm http fetch GET 200 https://registry.npmjs.org/domexception 923ms (cache revalidated)
+#11 5.679 npm http fetch GET 200 https://registry.npmjs.org/data-urls 939ms (cache revalidated)
+#11 5.688 npm http fetch GET 200 https://registry.npmjs.org/cssstyle 961ms (cache revalidated)
+#11 5.700 npm http fetch GET 200 https://registry.npmjs.org/html-encoding-sniffer 926ms (cache revalidated)
+#11 5.757 npm http fetch GET 200 https://registry.npmjs.org/webidl-conversions 964ms (cache revalidated)
+#11 5.788 npm http fetch GET 200 https://registry.npmjs.org/whatwg-mimetype 991ms (cache revalidated)
+#11 5.795 npm http fetch GET 200 https://registry.npmjs.org/combined-stream 983ms (cache revalidated)
+#11 5.802 npm http fetch GET 200 https://registry.npmjs.org/whatwg-encoding 1007ms (cache revalidated)
+#11 5.812 npm http fetch GET 200 https://registry.npmjs.org/aws-sign2 1006ms (cache revalidated)
+#11 5.819 npm http fetch GET 200 https://registry.npmjs.org/xml-name-validator 1016ms (cache revalidated)
+#11 5.833 npm http fetch GET 200 https://registry.npmjs.org/aws4 1026ms (cache revalidated)
+#11 5.841 npm http fetch GET 200 https://registry.npmjs.org/caseless 1031ms (cache revalidated)
+#11 5.860 npm http fetch GET 200 https://registry.npmjs.org/cssom 1135ms (cache miss)
+#11 5.870 npm http fetch GET 200 https://registry.npmjs.org/extend 1055ms (cache revalidated)
+#11 5.878 npm http fetch GET 200 https://registry.npmjs.org/har-validator 1040ms (cache revalidated)
+#11 5.900 npm http fetch GET 200 https://registry.npmjs.org/form-data 1079ms (cache revalidated)
+#11 5.910 npm http fetch GET 200 https://registry.npmjs.org/sax 1123ms (cache revalidated)
+#11 5.948 npm http fetch GET 200 https://registry.npmjs.org/is-typedarray 1107ms (cache revalidated)
+#11 5.955 npm http fetch GET 200 https://registry.npmjs.org/isstream 1111ms (cache revalidated)
+#11 5.961 npm http fetch GET 200 https://registry.npmjs.org/http-signature 1122ms (cache revalidated)
+#11 5.970 npm http fetch GET 200 https://registry.npmjs.org/forever-agent 1152ms (cache revalidated)
+#11 5.979 npm http fetch GET 200 https://registry.npmjs.org/parse5 1197ms (cache revalidated)
+#11 5.991 npm http fetch GET 200 https://registry.npmjs.org/symbol-tree 1196ms (cache revalidated)
+#11 6.000 npm http fetch GET 200 https://registry.npmjs.org/acorn-globals 1287ms (cache miss)
+#11 6.003 npm http fetch GET 200 https://registry.npmjs.org/mime-types 1154ms (cache revalidated)
+#11 6.031 npm http fetch GET 200 https://registry.npmjs.org/performance-now 1165ms (cache revalidated)
+#11 6.031 npm http fetch GET 200 https://registry.npmjs.org/json-stringify-safe 1173ms (cache revalidated)
+#11 6.031 npm http fetch GET 200 https://registry.npmjs.org/safe-buffer 1167ms (cache revalidated)
+#11 6.034 npm http fetch GET 200 https://registry.npmjs.org/oauth-sign 1181ms (cache revalidated)
+#11 6.043 npm http fetch GET 200 https://registry.npmjs.org/qs 1185ms (cache revalidated)
+#11 6.054 npm http fetch GET 200 https://registry.npmjs.org/tunnel-agent 1193ms (cache revalidated)
+#11 6.054 npm http fetch GET 200 https://registry.npmjs.org/uuid 1192ms (cache revalidated)
+#11 6.075 npm http fetch GET 200 https://registry.npmjs.org/punycode 1191ms (cache revalidated)
+#11 6.075 npm http fetch GET 200 https://registry.npmjs.org/psl 1210ms (cache revalidated)
+#11 6.080 npm http fetch GET 200 https://registry.npmjs.org/whatwg-url 1281ms (cache updated)
+#11 6.116 npm http fetch GET 200 https://registry.npmjs.org/core-js 1443ms (cache miss)
+#11 6.256 npm http fetch GET 200 https://registry.npmjs.org/w3c-hr-time 1465ms (cache miss)
+#11 6.265 npm http fetch GET 200 https://registry.npmjs.org/left-pad 1489ms (cache miss)
+#11 6.273 npm http fetch GET 200 https://registry.npmjs.org/nwsapi 1495ms (cache updated)
+#11 6.624 npm http fetch GET 200 https://registry.npmjs.org/stealthy-require 162ms (cache miss)
+#11 6.633 npm http fetch GET 200 https://registry.npmjs.org/request-promise-core 173ms (cache miss)
+#11 6.648 npm http fetch GET 200 https://registry.npmjs.org/browser-process-hrtime 184ms (cache miss)
+#11 6.700 npm http fetch GET 200 https://registry.npmjs.org/optionator 247ms (cache revalidated)
+#11 6.710 npm http fetch GET 200 https://registry.npmjs.org/acorn-walk 266ms (cache revalidated)
+#11 6.719 npm http fetch GET 200 https://registry.npmjs.org/estraverse 272ms (cache revalidated)
+#11 6.760 npm http fetch GET 200 https://registry.npmjs.org/tr46 291ms (cache revalidated)
+#11 6.768 npm http fetch GET 200 https://registry.npmjs.org/esutils 319ms (cache revalidated)
+#11 6.783 npm http fetch GET 200 https://registry.npmjs.org/source-map 328ms (cache revalidated)
+#11 6.793 npm http fetch GET 200 https://registry.npmjs.org/esprima 342ms (cache revalidated)
+#11 6.804 npm http fetch GET 200 https://registry.npmjs.org/lodash.sortby 338ms (cache miss)
+#11 6.944 npm http fetch GET 200 https://registry.npmjs.org/type-check 91ms (cache revalidated)
+#11 6.958 npm http fetch GET 200 https://registry.npmjs.org/prelude-ls 111ms (cache revalidated)
+#11 6.972 npm http fetch GET 200 https://registry.npmjs.org/deep-is 123ms (cache revalidated)
+#11 6.983 npm http fetch GET 200 https://registry.npmjs.org/levn 127ms (cache revalidated)
+#11 6.994 npm http fetch GET 200 https://registry.npmjs.org/word-wrap 143ms (cache revalidated)
+#11 7.002 npm http fetch GET 200 https://registry.npmjs.org/fast-levenshtein 145ms (cache revalidated)
+#11 7.267 npm http fetch GET 200 https://registry.npmjs.org/delayed-stream 92ms (cache revalidated)
+#11 7.315 npm http fetch GET 200 https://registry.npmjs.org/mime-db 126ms (cache revalidated)
+#11 7.352 npm http fetch GET 200 https://registry.npmjs.org/ajv 173ms (cache revalidated)
+#11 7.400 npm http fetch GET 200 https://registry.npmjs.org/asynckit 223ms (cache revalidated)
+#11 7.407 npm http fetch GET 200 https://registry.npmjs.org/assert-plus 225ms (cache revalidated)
+#11 7.412 npm http fetch GET 200 https://registry.npmjs.org/jsprim 228ms (cache revalidated)
+#11 7.420 npm http fetch GET 200 https://registry.npmjs.org/har-schema 239ms (cache revalidated)
+#11 7.435 npm http fetch GET 200 https://registry.npmjs.org/sshpk 248ms (cache revalidated)
+#11 7.643 npm http fetch GET 200 https://registry.npmjs.org/fast-deep-equal 178ms (cache revalidated)
+#11 7.651 npm http fetch GET 200 https://registry.npmjs.org/uri-js 180ms (cache revalidated)
+#11 7.659 npm http fetch GET 200 https://registry.npmjs.org/fast-json-stable-stringify 191ms (cache revalidated)
+#11 7.668 npm http fetch GET 200 https://registry.npmjs.org/json-schema-traverse 199ms (cache revalidated)
+#11 7.861 npm http fetch GET 200 https://registry.npmjs.org/asn1 125ms (cache revalidated)
+#11 7.873 npm http fetch GET 200 https://registry.npmjs.org/verror 143ms (cache revalidated)
+#11 7.900 npm http fetch GET 200 https://registry.npmjs.org/json-schema 178ms (cache revalidated)
+#11 7.909 npm http fetch GET 200 https://registry.npmjs.org/ecc-jsbn 146ms (cache revalidated)
+#11 7.916 npm http fetch GET 200 https://registry.npmjs.org/extsprintf 197ms (cache revalidated)
+#11 7.942 npm http fetch GET 200 https://registry.npmjs.org/getpass 198ms (cache revalidated)
+#11 7.952 npm http fetch GET 200 https://registry.npmjs.org/jsbn 206ms (cache revalidated)
+#11 7.961 npm http fetch GET 200 https://registry.npmjs.org/dashdash 219ms (cache revalidated)
+#11 7.970 npm http fetch GET 200 https://registry.npmjs.org/bcrypt-pbkdf 205ms (cache revalidated)
+#11 7.977 npm http fetch GET 200 https://registry.npmjs.org/tweetnacl 220ms (cache revalidated)
+#11 8.049 npm http fetch GET 200 https://registry.npmjs.org/core-util-is 38ms (cache revalidated)
+#11 10.86 npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+#11 10.89 npm http fetch GET 200 https://registry.npmjs.org/browser-process-hrtime/-/browser-process-hrtime-1.0.0.tgz 2399ms (cache miss)
+#11 10.90 npm http fetch GET 200 https://registry.npmjs.org/w3c-hr-time/-/w3c-hr-time-1.0.2.tgz 2358ms (cache miss)
+#11 10.97 npm http fetch GET 200 https://registry.npmjs.org/left-pad/-/left-pad-1.3.0.tgz 2408ms (cache miss)
+#11 10.98 npm http fetch GET 200 https://registry.npmjs.org/request-promise-native/-/request-promise-native-1.0.9.tgz 2430ms (cache miss)
+#11 10.98 npm WARN deprecated request-promise-native@1.0.9: request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142
+#11 11.03 npm http fetch GET 200 https://registry.npmjs.org/async-limiter/-/async-limiter-1.0.1.tgz 2555ms (cache miss)
+#11 11.05 npm http fetch GET 200 https://registry.npmjs.org/acorn-globals/-/acorn-globals-4.3.4.tgz 2451ms (cache miss)
+#11 11.11 npm http fetch GET 200 https://registry.npmjs.org/stealthy-require/-/stealthy-require-1.1.1.tgz 2619ms (cache miss)
+#11 11.13 npm http fetch GET 200 https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz 2520ms (cache miss)
+#11 11.14 npm http fetch GET 200 https://registry.npmjs.org/array-equal/-/array-equal-1.0.0.tgz 2545ms (cache miss)
+#11 11.17 npm http fetch GET 200 https://registry.npmjs.org/whatwg-mimetype/-/whatwg-mimetype-2.3.0.tgz 2638ms (cache miss)
+#11 11.18 npm http fetch GET 200 https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-4.0.2.tgz 2638ms (cache miss)
+#11 11.19 npm http fetch GET 200 https://registry.npmjs.org/html-encoding-sniffer/-/html-encoding-sniffer-1.0.2.tgz 2628ms (cache miss)
+#11 11.19 npm http fetch GET 200 https://registry.npmjs.org/domexception/-/domexception-1.0.1.tgz 2631ms (cache miss)
+#11 11.20 npm http fetch GET 200 https://registry.npmjs.org/whatwg-encoding/-/whatwg-encoding-1.0.5.tgz 2663ms (cache miss)
+#11 11.21 npm http fetch GET 200 https://registry.npmjs.org/data-urls/-/data-urls-1.1.0.tgz 2643ms (cache miss)
+#11 11.21 npm http fetch GET 200 https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.26.0.tgz 2581ms (cache miss)
+#11 11.25 npm http fetch GET 200 https://registry.npmjs.org/xml-name-validator/-/xml-name-validator-3.0.0.tgz 2716ms (cache miss)
+#11 11.28 npm WARN deprecated w3c-hr-time@1.0.2: Use your platform's native performance.now() and performance.timeOrigin.
+#11 11.29 npm WARN deprecated left-pad@1.3.0: use String.prototype.padStart()
+#11 11.44 npm http fetch GET 200 https://registry.npmjs.org/request-promise-core/-/request-promise-core-1.1.4.tgz 2934ms (cache miss)
+#11 11.48 npm http fetch GET 200 https://registry.npmjs.org/nwsapi/-/nwsapi-2.2.5.tgz 2924ms (cache miss)
+#11 11.59 npm http fetch GET 200 https://registry.npmjs.org/lodash.sortby/-/lodash.sortby-4.7.0.tgz 3103ms (cache miss)
+#11 11.60 npm http fetch GET 200 https://registry.npmjs.org/acorn-walk/-/acorn-walk-6.2.0.tgz 3073ms (cache miss)
+#11 11.64 npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+#11 11.68 npm http fetch GET 200 https://registry.npmjs.org/tr46/-/tr46-1.0.1.tgz 3203ms (cache miss)
+#11 11.71 npm http fetch GET 200 https://registry.npmjs.org/ws/-/ws-6.2.2.tgz 3096ms (cache miss)
+#11 11.78 npm http fetch GET 200 https://registry.npmjs.org/whatwg-url/-/whatwg-url-6.5.0.tgz 3257ms (cache miss)
+#11 11.88 npm http fetch GET 200 https://registry.npmjs.org/cssom/-/cssom-0.3.8.tgz 3288ms (cache miss)
+#11 11.91 npm http fetch GET 200 https://registry.npmjs.org/whatwg-url/-/whatwg-url-7.1.0.tgz 3341ms (cache miss)
+#11 11.93 npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+#11 12.07 npm http fetch GET 200 https://registry.npmjs.org/ws/-/ws-5.2.3.tgz 3448ms (cache miss)
+#11 12.24 npm http fetch GET 200 https://registry.npmjs.org/eventsource/-/eventsource-1.1.2.tgz 3617ms (cache miss)
+#11 12.25 npm http fetch GET 200 https://registry.npmjs.org/pn/-/pn-1.1.0.tgz 3703ms (cache miss)
+#11 12.56 npm http fetch GET 200 https://registry.npmjs.org/parse5/-/parse5-4.0.0.tgz 4012ms (cache miss)
+#11 12.74 npm http fetch GET 200 https://registry.npmjs.org/acorn/-/acorn-6.4.2.tgz 4133ms (cache miss)
+#11 12.86 npm http fetch GET 200 https://registry.npmjs.org/bluebird/-/bluebird-3.7.2.tgz 4228ms (cache miss)
+#11 13.01 npm http fetch GET 200 https://registry.npmjs.org/cssstyle/-/cssstyle-1.4.0.tgz 4445ms (cache miss)
+#11 13.12 npm http fetch GET 200 https://registry.npmjs.org/zombie/-/zombie-6.1.4.tgz 4651ms (cache miss)
+#11 13.49 npm http fetch GET 200 https://registry.npmjs.org/acorn/-/acorn-5.7.4.tgz 4888ms (cache miss)
+#11 15.03 npm http fetch GET 200 https://registry.npmjs.org/jsdom/-/jsdom-11.12.0.tgz 6411ms (cache miss)
+#11 16.63 npm http fetch GET 200 https://registry.npmjs.org/core-js/-/core-js-2.6.12.tgz 8019ms (cache miss)
+#11 16.64 npm WARN deprecated core-js@2.6.12: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
+#11 16.68 npm info run core-js@2.6.12 postinstall node_modules/zombie/node_modules/core-js node -e "try{require('./postinstall')}catch(e){}"
+#11 16.86 npm info run core-js@2.6.12 postinstall { code: 0, signal: null }
+#11 16.89 
+#11 16.89 added 105 packages in 15s
+#11 16.89 
+#11 16.89 2 packages are looking for funding
+#11 16.89   run `npm fund` for details
+#11 16.90 npm info ok 
+#11 DONE 17.2s
+
+#12 exporting to image
+#12 exporting layers
+#12 exporting layers 1.7s done
+#12 writing image sha256:3a0842cbae3fbda2b52ae1b6cbcbd4ebf3d9a36aff320a324332e75096d2cb46 0.0s done
+#12 naming to docker.io/library/flat_trade_token_generator:0.0.1 0.0s done
+#12 DONE 1.7s

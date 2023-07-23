@@ -1,0 +1,601 @@
+#1 [internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 453B 0.0s done
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/node:20.1.0-bullseye
+#3 DONE 5.8s
+
+#4 [1/4] FROM docker.io/library/node:20.1.0-bullseye@sha256:0efc3ef3fea2822c9d16da084c40181ed7f74b6f45141100580f9887ccc8e9a1
+#4 DONE 0.0s
+
+#5 [2/4] WORKDIR /app
+#5 CACHED
+
+#6 [3/4] RUN apt-get update
+#6 CACHED
+
+#7 [4/4] RUN apt-get install -y build-essential cmake git openssh-server gdb pkg-config valgrind systemd-coredump
+#7 CACHED
+
+#8 exporting to image
+#8 exporting layers done
+#8 writing image sha256:520fbe4956f762f320ef365b50d55a9ff78780d770ee8cb7f7e76feedb3ca8ef done
+#8 naming to docker.io/library/base_os:0.0.1 0.0s done
+#8 DONE 0.0s
+#1 [internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 3.76kB 0.0s done
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/base_os:0.0.1
+#3 DONE 0.0s
+
+#4 [ 1/77] FROM docker.io/library/base_os:0.0.1
+#4 DONE 0.0s
+
+#5 [44/77] RUN npm --global --loglevel info install bunyan
+#5 CACHED
+
+#6 [60/77] RUN npm --global --loglevel info install rxjs
+#6 CACHED
+
+#7 [24/77] RUN npm --global --loglevel info install sharp
+#7 CACHED
+
+#8 [18/77] RUN npm --global --loglevel info install socket.io
+#8 CACHED
+
+#9 [27/77] RUN npm --global --loglevel info install browserify
+#9 CACHED
+
+#10 [20/77] RUN npm --global --loglevel info install redux
+#10 CACHED
+
+#11 [37/77] RUN npm --global --loglevel info install graphicsmagick
+#11 CACHED
+
+#12 [17/77] RUN npm --global --loglevel info install pm2
+#12 CACHED
+
+#13 [ 7/77] RUN npm --global --loglevel info install nodemon
+#13 CACHED
+
+#14 [ 8/77] RUN npm --global --loglevel info install restify
+#14 CACHED
+
+#15 [49/77] RUN npm --global --loglevel info install compression
+#15 CACHED
+
+#16 [23/77] RUN npm --global --loglevel info install winston
+#16 CACHED
+
+#17 [69/77] RUN npm --global --loglevel info install fs
+#17 CACHED
+
+#18 [74/77] RUN npm --global --loglevel info install chokidar
+#18 CACHED
+
+#19 [36/77] RUN npm --global --loglevel info install marked
+#19 CACHED
+
+#20 [65/77] RUN npm --global --loglevel info install eslint-plugin-import
+#20 CACHED
+
+#21 [26/77] RUN npm --global --loglevel info install request
+#21 CACHED
+
+#22 [39/77] RUN npm --global --loglevel info install moment
+#22 CACHED
+
+#23 [ 5/77] RUN npm --global --loglevel info install eslint
+#23 CACHED
+
+#24 [14/77] RUN npm --global --loglevel info install axios
+#24 CACHED
+
+#25 [63/77] RUN npm --global --loglevel info install file-loader
+#25 CACHED
+
+#26 [54/77] RUN npm --global --loglevel info install tslib
+#26 CACHED
+
+#27 [28/77] RUN npm --global --loglevel info install bower
+#27 CACHED
+
+#28 [19/77] RUN npm --global --loglevel info install react
+#28 CACHED
+
+#29 [41/77] RUN npm --global --loglevel info install debug
+#29 CACHED
+
+#30 [33/77] RUN npm --global --loglevel info install sqlite
+#30 CACHED
+
+#31 [45/77] RUN npm --global --loglevel info install debug
+#31 CACHED
+
+#32 [32/77] RUN npm --global --loglevel info install pug
+#32 CACHED
+
+#33 [35/77] RUN npm --global --loglevel info install angular
+#33 CACHED
+
+#34 [67/77] RUN npm --global --loglevel info install url-loader
+#34 CACHED
+
+#35 [ 4/77] RUN npm --global --loglevel info install lodash
+#35 CACHED
+
+#36 [48/77] RUN npm --global --loglevel info install helmet
+#36 CACHED
+
+#37 [76/77] RUN npm --global --loglevel info install cookie-parser
+#37 CACHED
+
+#38 [46/77] RUN npm --global --loglevel info install flat
+#38 CACHED
+
+#39 [64/77] RUN npm --global --loglevel info install handlebars
+#39 CACHED
+
+#40 [57/77] RUN npm --global --loglevel info install yargs
+#40 CACHED
+
+#41 [66/77] RUN npm --global --loglevel info install eslint-plugin-react
+#41 CACHED
+
+#42 [ 6/77] RUN npm --global --loglevel info install morgan
+#42 CACHED
+
+#43 [30/77] RUN npm --global --loglevel info install uglifyjs2
+#43 CACHED
+
+#44 [50/77] RUN npm --global --loglevel info install react-dom
+#44 CACHED
+
+#45 [10/77] RUN npm --global --loglevel info install gulp
+#45 CACHED
+
+#46 [31/77] RUN npm --global --loglevel info install hapi
+#46 CACHED
+
+#47 [ 9/77] RUN npm --global --loglevel info install nodemailer
+#47 CACHED
+
+#48 [40/77] RUN npm --global --loglevel info install chalk
+#48 CACHED
+
+#49 [ 2/77] RUN npm set progress=true
+#49 CACHED
+
+#50 [75/77] RUN npm --global --loglevel info install mime
+#50 CACHED
+
+#51 [47/77] RUN npm --global --loglevel info install json5
+#51 CACHED
+
+#52 [71/77] RUN npm --global --loglevel info install superagent
+#52 CACHED
+
+#53 [72/77] RUN npm --global --loglevel info install vue
+#53 CACHED
+
+#54 [29/77] RUN npm --global --loglevel info install underscore
+#54 CACHED
+
+#55 [68/77] RUN npm --global --loglevel info install ws
+#55 CACHED
+
+#56 [51/77] RUN npm --global --loglevel info install fs-extra
+#56 CACHED
+
+#57 [52/77] RUN npm --global --loglevel info install moment
+#57 CACHED
+
+#58 [62/77] RUN npm --global --loglevel info install object-assign
+#58 CACHED
+
+#59 [61/77] RUN npm --global --loglevel info install redux
+#59 CACHED
+
+#60 [59/77] RUN npm --global --loglevel info install totp
+#60 CACHED
+
+#61 [22/77] RUN npm --global --loglevel info install passport
+#61 CACHED
+
+#62 [16/77] RUN npm --global --loglevel info install grunt
+#62 CACHED
+
+#63 [12/77] RUN npm --global --loglevel info install agenda
+#63 CACHED
+
+#64 [ 3/77] RUN npm --global --loglevel info install express
+#64 CACHED
+
+#65 [58/77] RUN npm --global --loglevel info install uuid
+#65 CACHED
+
+#66 [11/77] RUN npm --global --loglevel info install molecular
+#66 CACHED
+
+#67 [42/77] RUN npm --global --loglevel info install body-parser
+#67 CACHED
+
+#68 [38/77] RUN npm --global --loglevel info install jsdom
+#68 CACHED
+
+#69 [70/77] RUN npm --global --loglevel info install ejs
+#69 CACHED
+
+#70 [43/77] RUN npm --global --loglevel info install husky
+#70 CACHED
+
+#71 [56/77] RUN npm --global --loglevel info install glob
+#71 CACHED
+
+#72 [73/77] RUN npm --global --loglevel info install vue-router
+#72 CACHED
+
+#73 [53/77] RUN npm --global --loglevel info install vue
+#73 CACHED
+
+#74 [34/77] RUN npm --global --loglevel info install webpack
+#74 CACHED
+
+#75 [25/77] RUN npm --global --loglevel info install puppeteer
+#75 CACHED
+
+#76 [55/77] RUN npm --global --loglevel info install mkdirp
+#76 CACHED
+
+#77 [21/77] RUN npm --global --loglevel info install dotenv
+#77 CACHED
+
+#78 [13/77] RUN npm --global --loglevel info install async
+#78 CACHED
+
+#79 [15/77] RUN npm --global --loglevel info install grunt-cli
+#79 CACHED
+
+#80 [77/77] RUN npm --global --loglevel info install speakeasy
+#80 CACHED
+
+#81 exporting to image
+#81 exporting layers done
+#81 writing image sha256:8ca7b37c4d39af5dd20644943b4acd3124874863a458e535c42e84061ae2f948 0.0s done
+#81 naming to docker.io/library/base_node_js:0.0.1 0.0s done
+#81 DONE 0.0s
+#1 [internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 272B 0.1s done
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/base_node_js:0.0.1
+#3 DONE 0.0s
+
+#4 [1/4] FROM docker.io/library/base_node_js:0.0.1
+#4 DONE 0.0s
+
+#5 [2/4] RUN apt-get install -y --no-install-recommends     python3     python3-pip
+#5 CACHED
+
+#6 [3/4] RUN pip3 install nibabel pydicom matplotlib pillow
+#6 CACHED
+
+#7 [4/4] RUN pip3 install med2image
+#7 CACHED
+
+#8 exporting to image
+#8 exporting layers done
+#8 writing image sha256:78aed3d6cc741ebee74b376663748bebf0706af88b52b8c0fdb27a4b036e7f25 0.0s done
+#8 naming to docker.io/library/base_python:0.0.1 0.0s done
+#8 DONE 0.0s
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 437B done
+#1 DONE 0.0s
+
+#2 [internal] load .dockerignore
+#2 transferring context: 2B done
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/base_python:0.0.1
+#3 DONE 0.0s
+
+#4 [1/4] FROM docker.io/library/base_python:0.0.1
+#4 DONE 0.0s
+
+#5 [2/4] RUN npm --global --loglevel info install crypto
+#5 CACHED
+
+#6 [3/4] RUN npm --global --loglevel info install sha256
+#6 CACHED
+
+#7 [4/4] RUN npm --global --loglevel info install eslint-config-standard-with-typescript  @typescript-eslint/eslint-plugin@^5.50.0 eslint@^8.0.1 eslint-plugin-import@^2.25.2 eslint-plugin-n@^15.0.0 eslint-plugin-promise@^6.0.0 typescript
+#7 2.485 npm info using npm@9.6.4
+#7 2.495 npm info using node@v20.1.0
+#7 2.916 npm http fetch GET 200 https://registry.npmjs.org/eslint-config-standard-with-typescript 285ms (cache miss)
+#7 3.676 npm http fetch GET 200 https://registry.npmjs.org/@typescript-eslint%2feslint-plugin 739ms (cache miss)
+#7 4.104 npm http fetch GET 200 https://registry.npmjs.org/eslint 225ms (cache updated)
+#7 4.195 npm http fetch GET 200 https://registry.npmjs.org/eslint-plugin-import 60ms (cache revalidated)
+#7 4.293 npm http fetch GET 200 https://registry.npmjs.org/eslint-plugin-n 81ms (cache miss)
+#7 4.360 npm http fetch GET 200 https://registry.npmjs.org/eslint-plugin-promise 49ms (cache miss)
+#7 5.214 npm http fetch GET 200 https://registry.npmjs.org/typescript 843ms (cache updated)
+#7 8.095 npm http fetch GET 200 https://registry.npmjs.org/grapheme-splitter 2690ms (cache miss)
+#7 8.405 npm http fetch GET 200 https://registry.npmjs.org/debug 3002ms (cache revalidated)
+#7 8.414 npm http fetch GET 200 https://registry.npmjs.org/chalk 2963ms (cache revalidated)
+#7 8.425 npm http fetch GET 200 https://registry.npmjs.org/@nodelib%2ffs.walk 3000ms (cache revalidated)
+#7 8.435 npm http fetch GET 200 https://registry.npmjs.org/ajv 3009ms (cache revalidated)
+#7 8.482 npm http fetch GET 200 https://registry.npmjs.org/@eslint%2feslintrc 3066ms (cache revalidated)
+#7 8.542 npm http fetch GET 200 https://registry.npmjs.org/natural-compare-lite 3134ms (cache miss)
+#7 8.573 npm http fetch GET 200 https://registry.npmjs.org/escape-string-regexp 3113ms (cache revalidated)
+#7 8.598 npm http fetch GET 200 https://registry.npmjs.org/eslint-scope 3137ms (cache revalidated)
+#7 8.623 npm http fetch GET 200 https://registry.npmjs.org/espree 3157ms (cache revalidated)
+#7 8.678 npm http fetch GET 200 https://registry.npmjs.org/esutils 3209ms (cache revalidated)
+#7 8.767 npm http fetch GET 200 https://registry.npmjs.org/debug 3312ms (cache revalidated)
+#7 8.787 npm http fetch GET 200 https://registry.npmjs.org/@eslint-community%2fregexpp 3405ms (cache updated)
+#7 8.795 npm http fetch GET 200 https://registry.npmjs.org/@humanwhocodes%2fmodule-importer 3373ms (cache updated)
+#7 8.802 npm http fetch GET 200 https://registry.npmjs.org/@eslint-community%2feslint-utils 3388ms (cache updated)
+#7 8.813 npm http fetch GET 200 https://registry.npmjs.org/eslint-import-resolver-node 3259ms (cache revalidated)
+#7 8.820 npm http fetch GET 200 https://registry.npmjs.org/eslint-module-utils 3264ms (cache revalidated)
+#7 8.830 npm http fetch GET 200 https://registry.npmjs.org/text-table 3309ms (cache revalidated)
+#7 8.841 npm http fetch GET 200 https://registry.npmjs.org/strip-json-comments 3321ms (cache revalidated)
+#7 8.849 npm http fetch GET 200 https://registry.npmjs.org/array-includes 3321ms (cache revalidated)
+#7 8.858 npm http fetch GET 200 https://registry.npmjs.org/array.prototype.flat 3328ms (cache revalidated)
+#7 8.865 npm http fetch GET 200 https://registry.npmjs.org/debug 3331ms (cache revalidated)
+#7 8.875 npm http fetch GET 200 https://registry.npmjs.org/array.prototype.flatmap 3342ms (cache revalidated)
+#7 8.889 npm http fetch GET 200 https://registry.npmjs.org/fast-deep-equal 3417ms (cache updated)
+#7 8.897 npm http fetch GET 200 https://registry.npmjs.org/graphemer 3415ms (cache updated)
+#7 8.908 npm http fetch GET 200 https://registry.npmjs.org/is-core-module 3340ms (cache revalidated)
+#7 8.916 npm http fetch GET 200 https://registry.npmjs.org/object.values 3340ms (cache revalidated)
+#7 8.932 npm http fetch GET 200 https://registry.npmjs.org/import-fresh 3447ms (cache updated)
+#7 8.944 npm http fetch GET 200 https://registry.npmjs.org/tsconfig-paths 3359ms (cache revalidated)
+#7 8.955 npm http fetch GET 200 https://registry.npmjs.org/builtins 3361ms (cache miss)
+#7 8.965 npm http fetch GET 200 https://registry.npmjs.org/find-up 3490ms (cache updated)
+#7 8.974 npm http fetch GET 200 https://registry.npmjs.org/json-stable-stringify-without-jsonify 3481ms (cache updated)
+#7 8.981 npm http fetch GET 200 https://registry.npmjs.org/natural-compare 3467ms (cache updated)
+#7 8.983 npm http fetch GET 200 https://registry.npmjs.org/optionator 3468ms (cache updated)
+#7 9.002 npm http fetch GET 200 https://registry.npmjs.org/ignore 3595ms (cache updated)
+#7 9.012 npm http fetch GET 200 https://registry.npmjs.org/imurmurhash 3525ms (cache updated)
+#7 9.026 npm http fetch GET 200 https://registry.npmjs.org/levn 3529ms (cache updated)
+#7 9.036 npm http fetch GET 200 https://registry.npmjs.org/eslint-plugin-es 3440ms (cache miss)
+#7 9.047 npm http fetch GET 200 https://registry.npmjs.org/eslint-utils 3445ms (cache miss)
+#7 9.056 npm http fetch GET 200 https://registry.npmjs.org/glob-parent 3578ms (cache updated)
+#7 9.067 npm http fetch GET 200 https://registry.npmjs.org/js-yaml 3574ms (cache updated)
+#7 9.075 npm http fetch GET 200 https://registry.npmjs.org/has 3516ms (cache updated)
+#7 9.094 npm http fetch GET 200 https://registry.npmjs.org/esquery 3627ms (cache updated)
+#7 9.101 npm http fetch GET 200 https://registry.npmjs.org/globals 3620ms (cache updated)
+#7 9.125 npm http fetch GET 200 https://registry.npmjs.org/strip-ansi 3608ms (cache updated)
+#7 9.133 npm http fetch GET 200 https://registry.npmjs.org/is-glob 3560ms (cache updated)
+#7 9.143 npm http fetch GET 200 https://registry.npmjs.org/@eslint%2fjs 3725ms (cache updated)
+#7 9.160 npm http fetch GET 200 https://registry.npmjs.org/is-path-inside 3669ms (cache updated)
+#7 9.168 npm http fetch GET 200 https://registry.npmjs.org/lodash.merge 3670ms (cache updated)
+#7 9.180 npm http fetch GET 200 https://registry.npmjs.org/is-glob 3693ms (cache updated)
+#7 9.192 npm http fetch GET 200 https://registry.npmjs.org/ignore 3588ms (cache updated)
+#7 9.202 npm http fetch GET 200 https://registry.npmjs.org/@humanwhocodes%2fconfig-array 3783ms (cache updated)
+#7 9.211 npm http fetch GET 200 https://registry.npmjs.org/resolve 3631ms (cache updated)
+#7 9.222 npm http fetch GET 200 https://registry.npmjs.org/eslint-visitor-keys 3758ms (cache updated)
+#7 9.233 npm http fetch GET 200 https://registry.npmjs.org/file-entry-cache 3753ms (cache updated)
+#7 9.246 npm http fetch GET 200 https://registry.npmjs.org/doctrine 3694ms (cache updated)
+#7 9.275 npm http fetch GET 200 https://registry.npmjs.org/doctrine 3818ms (cache updated)
+#7 9.289 npm http fetch GET 200 https://registry.npmjs.org/minimatch 3788ms (cache updated)
+#7 9.331 npm http fetch GET 200 https://registry.npmjs.org/semver 3749ms (cache updated)
+#7 9.373 npm http fetch GET 200 https://registry.npmjs.org/cross-spawn 3920ms (cache updated)
+#7 9.385 npm http fetch GET 200 https://registry.npmjs.org/semver 3773ms (cache updated)
+#7 9.397 npm http fetch GET 200 https://registry.npmjs.org/eslint-config-standard 3872ms (cache miss)
+#7 9.405 npm http fetch GET 200 https://registry.npmjs.org/semver 3994ms (cache updated)
+#7 9.423 npm http fetch GET 200 https://registry.npmjs.org/tsutils 4010ms (cache miss)
+#7 9.661 npm http fetch GET 200 https://registry.npmjs.org/@typescript-eslint%2ftype-utils 4261ms (cache miss)
+#7 9.715 npm http fetch GET 200 https://registry.npmjs.org/@typescript-eslint%2futils 4312ms (cache miss)
+#7 9.862 npm http fetch GET 200 https://registry.npmjs.org/@typescript-eslint%2fscope-manager 4464ms (cache miss)
+#7 10.13 npm http fetch GET 200 https://registry.npmjs.org/@typescript-eslint%2fparser 4754ms (cache miss)
+#7 10.38 npm http fetch GET 200 https://registry.npmjs.org/@typescript-eslint%2fparser 4854ms (cache miss)
+#7 10.93 npm http fetch GET 200 https://registry.npmjs.org/tslib 339ms (cache updated)
+#7 10.99 npm http fetch GET 200 https://registry.npmjs.org/@types%2fjson-schema 406ms (cache updated)
+#7 11.02 npm http fetch GET 200 https://registry.npmjs.org/@types%2fsemver 437ms (cache miss)
+#7 11.07 npm http fetch GET 200 https://registry.npmjs.org/ms 485ms (cache updated)
+#7 11.17 npm http fetch GET 200 https://registry.npmjs.org/lru-cache 576ms (cache updated)
+#7 11.87 npm http fetch GET 200 https://registry.npmjs.org/@typescript-eslint%2fvisitor-keys 1289ms (cache miss)
+#7 12.01 npm http fetch GET 200 https://registry.npmjs.org/@typescript-eslint%2ftypescript-estree 1438ms (cache miss)
+#7 12.61 npm http fetch GET 200 https://registry.npmjs.org/@typescript-eslint%2ftypes 2030ms (cache miss)
+#7 13.75 npm http fetch GET 200 https://registry.npmjs.org/ansi-styles 770ms (cache revalidated)
+#7 13.76 npm http fetch GET 200 https://registry.npmjs.org/supports-color 777ms (cache revalidated)
+#7 13.80 npm http fetch GET 200 https://registry.npmjs.org/ansi-regex 528ms (cache revalidated)
+#7 13.81 npm http fetch GET 200 https://registry.npmjs.org/path-exists 697ms (cache revalidated)
+#7 13.82 npm http fetch GET 200 https://registry.npmjs.org/argparse 627ms (cache revalidated)
+#7 13.84 npm http fetch GET 200 https://registry.npmjs.org/fast-json-stable-stringify 859ms (cache updated)
+#7 13.85 npm http fetch GET 200 https://registry.npmjs.org/path-key 866ms (cache updated)
+#7 13.86 npm http fetch GET 200 https://registry.npmjs.org/@humanwhocodes%2fobject-schema 894ms (cache updated)
+#7 13.87 npm http fetch GET 200 https://registry.npmjs.org/uri-js 895ms (cache updated)
+#7 13.88 npm http fetch GET 200 https://registry.npmjs.org/fastq 913ms (cache updated)
+#7 13.89 npm http fetch GET 200 https://registry.npmjs.org/estraverse 878ms (cache updated)
+#7 13.89 npm http fetch GET 200 https://registry.npmjs.org/@nodelib%2ffs.scandir 924ms (cache updated)
+#7 13.90 npm http fetch GET 200 https://registry.npmjs.org/locate-path 808ms (cache updated)
+#7 13.91 npm http fetch GET 200 https://registry.npmjs.org/parent-module 757ms (cache updated)
+#7 13.91 npm http fetch GET 200 https://registry.npmjs.org/resolve-from 742ms (cache updated)
+#7 13.92 npm http fetch GET 200 https://registry.npmjs.org/json-schema-traverse 942ms (cache updated)
+#7 13.92 npm http fetch GET 200 https://registry.npmjs.org/shebang-command 941ms (cache updated)
+#7 13.93 npm http fetch GET 200 https://registry.npmjs.org/is-extglob 758ms (cache updated)
+#7 13.94 npm http fetch GET 200 https://registry.npmjs.org/brace-expansion 688ms (cache updated)
+#7 13.94 npm http fetch GET 200 https://registry.npmjs.org/deep-is 679ms (cache updated)
+#7 13.95 npm http fetch GET 200 https://registry.npmjs.org/fast-levenshtein 681ms (cache updated)
+#7 13.96 npm http fetch GET 200 https://registry.npmjs.org/type-check 691ms (cache updated)
+#7 13.97 npm http fetch GET 200 https://registry.npmjs.org/word-wrap 694ms (cache updated)
+#7 13.98 npm http fetch GET 200 https://registry.npmjs.org/which 992ms (cache updated)
+#7 13.99 npm http fetch GET 200 https://registry.npmjs.org/prelude-ls 760ms (cache updated)
+#7 13.99 npm http fetch GET 200 https://registry.npmjs.org/type-check 765ms (cache updated)
+#7 14.00 npm http fetch GET 200 https://registry.npmjs.org/flat-cache 928ms (cache updated)
+#7 14.01 npm http fetch GET 200 https://registry.npmjs.org/esrecurse 1019ms (cache updated)
+#7 14.01 npm http fetch GET 200 https://registry.npmjs.org/acorn 978ms (cache updated)
+#7 14.02 npm http fetch GET 200 https://registry.npmjs.org/estraverse 966ms (cache updated)
+#7 14.04 npm http fetch GET 200 https://registry.npmjs.org/acorn-jsx 1002ms (cache updated)
+#7 14.05 npm http fetch GET 200 https://registry.npmjs.org/type-fest 936ms (cache updated)
+#7 14.34 npm http fetch GET 200 https://registry.npmjs.org/is-string 143ms (cache revalidated)
+#7 14.35 npm http fetch GET 200 https://registry.npmjs.org/define-properties 169ms (cache revalidated)
+#7 14.36 npm http fetch GET 200 https://registry.npmjs.org/call-bind 180ms (cache revalidated)
+#7 14.40 npm http fetch GET 200 https://registry.npmjs.org/es-shim-unscopables 201ms (cache revalidated)
+#7 14.41 npm http fetch GET 200 https://registry.npmjs.org/es-abstract 226ms (cache revalidated)
+#7 14.42 npm http fetch GET 200 https://registry.npmjs.org/get-intrinsic 232ms (cache revalidated)
+#7 14.43 npm http fetch GET 200 https://registry.npmjs.org/function-bind 220ms (cache revalidated)
+#7 14.43 npm http fetch GET 200 https://registry.npmjs.org/supports-preserve-symlinks-flag 222ms (cache revalidated)
+#7 14.44 npm http fetch GET 200 https://registry.npmjs.org/strip-bom 221ms (cache revalidated)
+#7 14.44 npm http fetch GET 200 https://registry.npmjs.org/path-parse 236ms (cache revalidated)
+#7 14.45 npm http fetch GET 200 https://registry.npmjs.org/@types%2fjson5 239ms (cache revalidated)
+#7 14.46 npm http fetch GET 200 https://registry.npmjs.org/json5 248ms (cache revalidated)
+#7 14.47 npm http fetch GET 200 https://registry.npmjs.org/minimist 257ms (cache updated)
+#7 14.60 npm http fetch GET 200 https://registry.npmjs.org/regexpp 58ms (cache miss)
+#7 14.68 npm http fetch GET 200 https://registry.npmjs.org/globby 56ms (cache miss)
+#7 14.81 npm http fetch GET 200 https://registry.npmjs.org/array-union 99ms (cache miss)
+#7 14.82 npm http fetch GET 200 https://registry.npmjs.org/merge2 101ms (cache miss)
+#7 14.83 npm http fetch GET 200 https://registry.npmjs.org/slash 111ms (cache miss)
+#7 14.84 npm http fetch GET 200 https://registry.npmjs.org/dir-glob 127ms (cache miss)
+#7 14.85 npm http fetch GET 200 https://registry.npmjs.org/fast-glob 133ms (cache miss)
+#7 15.03 npm http fetch GET 200 https://registry.npmjs.org/path-type 64ms (cache revalidated)
+#7 15.07 npm http fetch GET 200 https://registry.npmjs.org/micromatch 90ms (cache revalidated)
+#7 15.12 npm http fetch GET 200 https://registry.npmjs.org/@nodelib%2ffs.stat 153ms (cache updated)
+#7 15.21 npm http fetch GET 200 https://registry.npmjs.org/picomatch 57ms (cache revalidated)
+#7 15.23 npm http fetch GET 200 https://registry.npmjs.org/braces 78ms (cache revalidated)
+#7 15.33 npm http fetch GET 200 https://registry.npmjs.org/reusify 61ms (cache updated)
+#7 15.34 npm http fetch GET 200 https://registry.npmjs.org/run-parallel 82ms (cache updated)
+#7 15.40 npm http fetch GET 200 https://registry.npmjs.org/queue-microtask 42ms (cache updated)
+#7 15.48 npm http fetch GET 200 https://registry.npmjs.org/fill-range 55ms (cache revalidated)
+#7 15.55 npm http fetch GET 200 https://registry.npmjs.org/to-regex-range 55ms (cache revalidated)
+#7 15.61 npm http fetch GET 200 https://registry.npmjs.org/is-number 46ms (cache revalidated)
+#7 15.68 npm http fetch GET 200 https://registry.npmjs.org/yallist 53ms (cache revalidated)
+#7 16.35 npm http fetch GET 200 https://registry.npmjs.org/array-buffer-byte-length 377ms (cache revalidated)
+#7 16.36 npm http fetch GET 200 https://registry.npmjs.org/has-property-descriptors 389ms (cache revalidated)
+#7 16.36 npm http fetch GET 200 https://registry.npmjs.org/es-set-tostringtag 386ms (cache revalidated)
+#7 16.36 npm http fetch GET 200 https://registry.npmjs.org/gopd 382ms (cache revalidated)
+#7 16.37 npm http fetch GET 200 https://registry.npmjs.org/available-typed-arrays 396ms (cache revalidated)
+#7 16.37 npm http fetch GET 200 https://registry.npmjs.org/internal-slot 385ms (cache revalidated)
+#7 16.38 npm http fetch GET 200 https://registry.npmjs.org/is-array-buffer 388ms (cache revalidated)
+#7 16.38 npm http fetch GET 200 https://registry.npmjs.org/get-symbol-description 403ms (cache revalidated)
+#7 16.39 npm http fetch GET 200 https://registry.npmjs.org/function.prototype.name 410ms (cache revalidated)
+#7 16.39 npm http fetch GET 200 https://registry.npmjs.org/has-proto 408ms (cache revalidated)
+#7 16.40 npm http fetch GET 200 https://registry.npmjs.org/globalthis 416ms (cache revalidated)
+#7 16.40 npm http fetch GET 200 https://registry.npmjs.org/has-symbols 415ms (cache revalidated)
+#7 16.41 npm http fetch GET 200 https://registry.npmjs.org/es-to-primitive 431ms (cache revalidated)
+#7 16.42 npm http fetch GET 200 https://registry.npmjs.org/is-callable 425ms (cache revalidated)
+#7 16.45 npm http fetch GET 200 https://registry.npmjs.org/is-negative-zero 460ms (cache revalidated)
+#7 16.48 npm http fetch GET 200 https://registry.npmjs.org/is-shared-array-buffer 488ms (cache revalidated)
+#7 16.49 npm http fetch GET 200 https://registry.npmjs.org/is-weakref 466ms (cache revalidated)
+#7 16.50 npm http fetch GET 200 https://registry.npmjs.org/string.prototype.trim 463ms (cache revalidated)
+#7 16.51 npm http fetch GET 200 https://registry.npmjs.org/unbox-primitive 463ms (cache revalidated)
+#7 16.51 npm http fetch GET 200 https://registry.npmjs.org/string.prototype.trimend 473ms (cache revalidated)
+#7 16.52 npm http fetch GET 200 https://registry.npmjs.org/regexp.prototype.flags 484ms (cache revalidated)
+#7 16.52 npm http fetch GET 200 https://registry.npmjs.org/safe-regex-test 488ms (cache revalidated)
+#7 16.53 npm http fetch GET 200 https://registry.npmjs.org/is-typed-array 505ms (cache revalidated)
+#7 16.53 npm http fetch GET 200 https://registry.npmjs.org/typed-array-length 490ms (cache revalidated)
+#7 16.54 npm http fetch GET 200 https://registry.npmjs.org/which-typed-array 492ms (cache revalidated)
+#7 16.54 npm http fetch GET 200 https://registry.npmjs.org/has-tostringtag 497ms (cache revalidated)
+#7 16.55 npm http fetch GET 200 https://registry.npmjs.org/is-regex 557ms (cache updated)
+#7 16.57 npm http fetch GET 200 https://registry.npmjs.org/object-keys 599ms (cache updated)
+#7 16.58 npm http fetch GET 200 https://registry.npmjs.org/object.assign 550ms (cache updated)
+#7 16.59 npm http fetch GET 200 https://registry.npmjs.org/object-inspect 559ms (cache updated)
+#7 17.48 npm http fetch GET 200 https://registry.npmjs.org/string.prototype.trimstart 1439ms (cache revalidated)
+#7 18.04 npm http fetch GET 200 https://registry.npmjs.org/functions-have-names 402ms (cache revalidated)
+#7 18.05 npm http fetch GET 200 https://registry.npmjs.org/is-symbol 411ms (cache revalidated)
+#7 18.06 npm http fetch GET 200 https://registry.npmjs.org/is-date-object 418ms (cache revalidated)
+#7 18.06 npm http fetch GET 200 https://registry.npmjs.org/side-channel 416ms (cache revalidated)
+#7 18.07 npm http fetch GET 200 https://registry.npmjs.org/functions-have-names 392ms (cache revalidated)
+#7 18.07 npm http fetch GET 200 https://registry.npmjs.org/has-bigints 391ms (cache revalidated)
+#7 18.07 npm http fetch GET 200 https://registry.npmjs.org/which-boxed-primitive 393ms (cache revalidated)
+#7 18.08 npm http fetch GET 200 https://registry.npmjs.org/for-each 409ms (cache updated)
+#7 18.20 npm http fetch GET 200 https://registry.npmjs.org/concat-map 51ms (cache updated)
+#7 18.23 npm http fetch GET 200 https://registry.npmjs.org/balanced-match 75ms (cache updated)
+#7 18.34 npm http fetch GET 200 https://registry.npmjs.org/is-bigint 61ms (cache revalidated)
+#7 18.37 npm http fetch GET 200 https://registry.npmjs.org/is-number-object 88ms (cache revalidated)
+#7 18.38 npm http fetch GET 200 https://registry.npmjs.org/is-boolean-object 100ms (cache revalidated)
+#7 18.56 npm http fetch GET 200 https://registry.npmjs.org/punycode 59ms (cache updated)
+#7 18.64 npm http fetch GET 200 https://registry.npmjs.org/color-convert 62ms (cache revalidated)
+#7 18.66 npm http fetch GET 200 https://registry.npmjs.org/has-flag 80ms (cache revalidated)
+#7 18.74 npm http fetch GET 200 https://registry.npmjs.org/color-name 62ms (cache revalidated)
+#7 18.84 npm http fetch GET 200 https://registry.npmjs.org/shebang-regex 79ms (cache updated)
+#7 18.85 npm http fetch GET 200 https://registry.npmjs.org/isexe 83ms (cache updated)
+#7 18.95 npm http fetch GET 200 https://registry.npmjs.org/rimraf 63ms (cache revalidated)
+#7 18.97 npm http fetch GET 200 https://registry.npmjs.org/flatted 94ms (cache updated)
+#7 19.06 npm http fetch GET 200 https://registry.npmjs.org/p-locate 70ms (cache updated)
+#7 19.17 npm http fetch GET 200 https://registry.npmjs.org/glob 93ms (cache updated)
+#7 19.27 npm http fetch GET 200 https://registry.npmjs.org/callsites 83ms (cache updated)
+#7 19.37 npm http fetch GET 200 https://registry.npmjs.org/p-limit 59ms (cache updated)
+#7 19.49 npm http fetch GET 200 https://registry.npmjs.org/yocto-queue 79ms (cache updated)
+#7 19.60 npm http fetch GET 200 https://registry.npmjs.org/once 79ms (cache updated)
+#7 19.62 npm http fetch GET 200 https://registry.npmjs.org/path-is-absolute 95ms (cache updated)
+#7 19.64 npm http fetch GET 200 https://registry.npmjs.org/inherits 118ms (cache updated)
+#7 19.64 npm http fetch GET 200 https://registry.npmjs.org/fs.realpath 129ms (cache updated)
+#7 19.65 npm http fetch GET 200 https://registry.npmjs.org/inflight 135ms (cache updated)
+#7 19.74 npm http fetch GET 200 https://registry.npmjs.org/wrappy 67ms (cache updated)
+#7 61.80 npm http fetch GET 200 https://registry.npmjs.org/dir-glob/-/dir-glob-3.0.1.tgz 5460ms (cache miss)
+#7 61.81 npm http fetch GET 200 https://registry.npmjs.org/array-union/-/array-union-2.1.0.tgz 5465ms (cache miss)
+#7 61.82 npm http fetch GET 200 https://registry.npmjs.org/slash/-/slash-3.0.0.tgz 5483ms (cache miss)
+#7 61.82 npm http fetch GET 200 https://registry.npmjs.org/builtins/-/builtins-5.0.1.tgz 5519ms (cache miss)
+#7 61.83 npm http fetch GET 200 https://registry.npmjs.org/eslint-config-standard/-/eslint-config-standard-17.0.0.tgz 5466ms (cache miss)
+#7 61.84 npm http fetch GET 200 https://registry.npmjs.org/merge2/-/merge2-1.4.1.tgz 5461ms (cache miss)
+#7 61.92 npm http fetch GET 200 https://registry.npmjs.org/natural-compare-lite/-/natural-compare-lite-1.4.0.tgz 5501ms (cache miss)
+#7 62.01 npm http fetch GET 200 https://registry.npmjs.org/eslint-config-standard-with-typescript/-/eslint-config-standard-with-typescript-35.0.0.tgz 6030ms (cache miss)
+#7 62.03 npm http fetch GET 200 https://registry.npmjs.org/slash/-/slash-3.0.0.tgz 5658ms (cache miss)
+#7 62.04 npm http fetch GET 200 https://registry.npmjs.org/globby/-/globby-11.1.0.tgz 5651ms (cache miss)
+#7 62.06 npm http fetch GET 200 https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.11.10.tgz 5577ms (cache miss)
+#7 62.11 npm http fetch GET 200 https://registry.npmjs.org/merge2/-/merge2-1.4.1.tgz 5773ms (cache miss)
+#7 62.21 npm http fetch GET 200 https://registry.npmjs.org/array-union/-/array-union-2.1.0.tgz 5823ms (cache miss)
+#7 62.21 npm http fetch GET 200 https://registry.npmjs.org/dir-glob/-/dir-glob-3.0.1.tgz 5830ms (cache miss)
+#7 62.22 npm http fetch GET 200 https://registry.npmjs.org/@eslint/js/-/js-8.43.0.tgz 5735ms (cache miss)
+#7 62.28 npm http fetch GET 200 https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-2.1.0.tgz 6220ms (cache miss)
+#7 62.36 npm http fetch GET 200 https://registry.npmjs.org/globby/-/globby-11.1.0.tgz 6005ms (cache miss)
+#7 62.36 npm http fetch GET 200 https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-1.3.0.tgz 6132ms (cache miss)
+#7 62.49 npm http fetch GET 200 https://registry.npmjs.org/@typescript-eslint/parser/-/parser-5.60.0.tgz 6051ms (cache miss)
+#7 62.77 npm http fetch GET 200 https://registry.npmjs.org/@typescript-eslint/visitor-keys/-/visitor-keys-5.60.0.tgz 6417ms (cache miss)
+#7 62.84 npm http fetch GET 200 https://registry.npmjs.org/@typescript-eslint/parser/-/parser-5.60.0.tgz 6477ms (cache miss)
+#7 62.85 npm http fetch GET 200 https://registry.npmjs.org/@typescript-eslint/visitor-keys/-/visitor-keys-5.60.0.tgz 6454ms (cache miss)
+#7 63.22 npm http fetch GET 200 https://registry.npmjs.org/grapheme-splitter/-/grapheme-splitter-1.0.4.tgz 6796ms (cache miss)
+#7 63.49 npm http fetch GET 200 https://registry.npmjs.org/eslint-plugin-promise/-/eslint-plugin-promise-6.1.1.tgz 7556ms (cache miss)
+#7 63.69 npm http fetch GET 200 https://registry.npmjs.org/acorn/-/acorn-8.9.0.tgz 7158ms (cache miss)
+#7 63.77 npm http fetch GET 200 https://registry.npmjs.org/regexpp/-/regexpp-3.2.0.tgz 7684ms (cache miss)
+#7 63.78 npm http fetch GET 200 https://registry.npmjs.org/eslint-utils/-/eslint-utils-3.0.0.tgz 7630ms (cache miss)
+#7 63.85 npm http fetch GET 200 https://registry.npmjs.org/@types/semver/-/semver-7.5.0.tgz 7461ms (cache miss)
+#7 63.92 npm http fetch GET 200 https://registry.npmjs.org/eslint-utils/-/eslint-utils-2.1.0.tgz 7635ms (cache miss)
+#7 64.01 npm http fetch GET 200 https://registry.npmjs.org/@typescript-eslint/types/-/types-5.60.0.tgz 7652ms (cache miss)
+#7 64.17 npm http fetch GET 200 https://registry.npmjs.org/@typescript-eslint/types/-/types-5.60.0.tgz 7775ms (cache miss)
+#7 64.26 npm http fetch GET 200 https://registry.npmjs.org/semver/-/semver-7.5.3.tgz 7914ms (cache miss)
+#7 64.34 npm http fetch GET 200 https://registry.npmjs.org/semver/-/semver-7.5.3.tgz 7929ms (cache miss)
+#7 64.53 npm http fetch GET 200 https://registry.npmjs.org/semver/-/semver-7.5.3.tgz 8430ms (cache miss)
+#7 64.80 npm http fetch GET 200 https://registry.npmjs.org/@typescript-eslint/type-utils/-/type-utils-5.60.0.tgz 8375ms (cache miss)
+#7 64.82 npm http fetch GET 200 https://registry.npmjs.org/fast-glob/-/fast-glob-3.2.12.tgz 8479ms (cache miss)
+#7 64.88 npm http fetch GET 200 https://registry.npmjs.org/fast-glob/-/fast-glob-3.2.12.tgz 8500ms (cache miss)
+#7 65.18 npm http fetch GET 200 https://registry.npmjs.org/tsutils/-/tsutils-3.21.0.tgz 8779ms (cache miss)
+#7 65.31 npm http fetch GET 200 https://registry.npmjs.org/tsutils/-/tsutils-3.21.0.tgz 8963ms (cache miss)
+#7 65.47 npm http fetch GET 200 https://registry.npmjs.org/eslint-plugin-n/-/eslint-plugin-n-15.7.0.tgz 9536ms (cache miss)
+#7 65.60 npm http fetch GET 200 https://registry.npmjs.org/eslint-plugin-es/-/eslint-plugin-es-4.1.0.tgz 9444ms (cache miss)
+#7 66.27 npm http fetch GET 200 https://registry.npmjs.org/@typescript-eslint/typescript-estree/-/typescript-estree-5.60.0.tgz 9910ms (cache miss)
+#7 66.28 npm http fetch GET 200 https://registry.npmjs.org/@typescript-eslint/typescript-estree/-/typescript-estree-5.60.0.tgz 9884ms (cache miss)
+#7 66.67 npm http fetch GET 200 https://registry.npmjs.org/@typescript-eslint/utils/-/utils-5.60.0.tgz 10240ms (cache miss)
+#7 67.96 npm http fetch GET 200 https://registry.npmjs.org/@typescript-eslint/scope-manager/-/scope-manager-5.60.0.tgz 11532ms (cache miss)
+#7 67.98 npm http fetch GET 200 https://registry.npmjs.org/@typescript-eslint/scope-manager/-/scope-manager-5.60.0.tgz 11623ms (cache miss)
+#7 68.30 npm http fetch GET 200 https://registry.npmjs.org/eslint/-/eslint-8.43.0.tgz 12295ms (cache miss)
+#7 68.74 npm http fetch GET 200 https://registry.npmjs.org/@typescript-eslint/eslint-plugin/-/eslint-plugin-5.60.0.tgz 12723ms (cache miss)
+#7 70.19 npm http fetch GET 200 https://registry.npmjs.org/typescript/-/typescript-5.1.3.tgz 14231ms (cache miss)
+#7 71.79 
+#7 71.79 added 113 packages, removed 93 packages, and changed 172 packages in 1m
+#7 71.80 
+#7 71.80 89 packages are looking for funding
+#7 71.80   run `npm fund` for details
+#7 71.80 npm info ok 
+#7 DONE 72.9s
+
+#8 exporting to image
+#8 exporting layers
+#8 exporting layers 4.2s done
+#8 writing image sha256:54092e8e26cbad557eeeee923a5f4feea9482387f5074679635b64f300a25dad 0.0s done
+#8 naming to docker.io/library/flat_trade_token_generator:0.0.1
+#8 naming to docker.io/library/flat_trade_token_generator:0.0.1 0.0s done
+#8 DONE 4.3s
