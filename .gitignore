@@ -16,3 +16,5 @@ ft/nohup.out
 ft/node_modules
 ft/*.jpeg
 ft/logs
+ft/tel.send.cron.log
+git_pull.cron.log

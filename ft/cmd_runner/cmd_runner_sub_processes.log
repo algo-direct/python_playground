@@ -163,3 +163,54 @@ KeyError: 'command'
 2023-07-23_16:57:25.794 pid:5461; INFO: [cmd_runner_sub_proc.py:12 -                  <module>() ] Starting cmd_runner_sub_proc: ['cmd_runner_sub_proc.py', '2023-07-23_11:27:25.693363.json']
 2023-07-23_16:57:25.803 pid:5461; INFO: [cmd_runner_sub_proc.py:22 -                  <module>() ] Running cmd: {'timeout': '10', 'cmd_id': '2023-07-23_11:27:25.693363', 'command': 'docker stats --no-stream'}
 2023-07-23_16:57:28.517 pid:5461; INFO: [cmd_runner_sub_proc.py:41 -                  <module>() ] Finished cmd_id: 2023-07-23_11:27:25.693363, exit code: 0
+2023-07-23_17:43:46.442 pid:9360; INFO: [cmd_runner_sub_proc.py:12 -                  <module>() ] Starting cmd_runner_sub_proc: ['cmd_runner_sub_proc.py', '2023-07-23_12:13:46.342655.json']
+2023-07-23_17:43:46.451 pid:9360; INFO: [cmd_runner_sub_proc.py:22 -                  <module>() ] Running cmd: {'timeout': '3', 'cmd_id': '2023-07-23_12:13:46.342655', 'command': 'ls ../../git_pull.cron.log'}
+2023-07-23_17:43:46.462 pid:9360; INFO: [cmd_runner_sub_proc.py:41 -                  <module>() ] Finished cmd_id: 2023-07-23_12:13:46.342655, exit code: 0
+2023-07-23_17:44:03.794 pid:9384; INFO: [cmd_runner_sub_proc.py:12 -                  <module>() ] Starting cmd_runner_sub_proc: ['cmd_runner_sub_proc.py', '2023-07-23_12:14:03.691438.json']
+2023-07-23_17:44:03.803 pid:9384; INFO: [cmd_runner_sub_proc.py:22 -                  <module>() ] Running cmd: {'timeout': '3', 'cmd_id': '2023-07-23_12:14:03.691438', 'command': 'ls -lh ../../git_pull.cron.log'}
+2023-07-23_17:44:03.814 pid:9384; INFO: [cmd_runner_sub_proc.py:41 -                  <module>() ] Finished cmd_id: 2023-07-23_12:14:03.691438, exit code: 0
+2023-07-23_17:44:38.072 pid:9401; INFO: [cmd_runner_sub_proc.py:12 -                  <module>() ] Starting cmd_runner_sub_proc: ['cmd_runner_sub_proc.py', '2023-07-23_12:14:37.941743.json']
+2023-07-23_17:44:38.081 pid:9401; INFO: [cmd_runner_sub_proc.py:22 -                  <module>() ] Running cmd: {'timeout': '3', 'cmd_id': '2023-07-23_12:14:37.941743', 'command': 'tail -n10 ../../git_pull.cron.log'}
+2023-07-23_17:44:38.091 pid:9401; INFO: [cmd_runner_sub_proc.py:41 -                  <module>() ] Finished cmd_id: 2023-07-23_12:14:37.941743, exit code: 0
+2023-07-23_17:45:28.736 pid:9454; INFO: [cmd_runner_sub_proc.py:12 -                  <module>() ] Starting cmd_runner_sub_proc: ['cmd_runner_sub_proc.py', '2023-07-23_12:15:28.633530.json']
+2023-07-23_17:45:28.744 pid:9454; INFO: [cmd_runner_sub_proc.py:22 -                  <module>() ] Running cmd: {'timeout': '3', 'cmd_id': '2023-07-23_12:15:28.633530', 'command': 'docker stats --no-stream'}
+2023-07-23_17:45:31.435 pid:9454; INFO: [cmd_runner_sub_proc.py:41 -                  <module>() ] Finished cmd_id: 2023-07-23_12:15:28.633530, exit code: 0
+2023-07-23_17:49:32.618 pid:9649; INFO: [cmd_runner_sub_proc.py:12 -                  <module>() ] Starting cmd_runner_sub_proc: ['cmd_runner_sub_proc.py', '2023-07-23_12:19:32.517934.json']
+2023-07-23_17:49:32.627 pid:9649; INFO: [cmd_runner_sub_proc.py:22 -                  <module>() ] Running cmd: {'timeout': '30', 'cmd_id': '2023-07-23_12:19:32.517934', 'command': 'docker service update --force all_things_on_a_bm_telegram_cmd_rcvr.1.mtqde0gf3e53r7tsufx8zu7y9'}
+2023-07-23_17:49:32.687 pid:9649; INFO: [cmd_runner_sub_proc.py:41 -                  <module>() ] Finished cmd_id: 2023-07-23_12:19:32.517934, exit code: 1
+2023-07-23_17:49:54.554 pid:9665; INFO: [cmd_runner_sub_proc.py:12 -                  <module>() ] Starting cmd_runner_sub_proc: ['cmd_runner_sub_proc.py', '2023-07-23_12:19:54.442847.json']
+2023-07-23_17:49:54.563 pid:9665; INFO: [cmd_runner_sub_proc.py:22 -                  <module>() ] Running cmd: {'timeout': '30', 'cmd_id': '2023-07-23_12:19:54.442847', 'command': 'docker service update --force 8612ffa4afa2'}
+2023-07-23_17:49:54.617 pid:9665; INFO: [cmd_runner_sub_proc.py:41 -                  <module>() ] Finished cmd_id: 2023-07-23_12:19:54.442847, exit code: 1
+2023-07-23_17:51:11.650 pid:9752; INFO: [cmd_runner_sub_proc.py:12 -                  <module>() ] Starting cmd_runner_sub_proc: ['cmd_runner_sub_proc.py', '2023-07-23_12:21:11.533350.json']
+2023-07-23_17:51:11.666 pid:9752; INFO: [cmd_runner_sub_proc.py:22 -                  <module>() ] Running cmd: {'timeout': '30', 'cmd_id': '2023-07-23_12:21:11.533350', 'command': 'docker service update --force ee6wn8mev1ti'}
+2023-07-23_17:51:23.517 pid:9752; INFO: [cmd_runner_sub_proc.py:41 -                  <module>() ] Finished cmd_id: 2023-07-23_12:21:11.533350, exit code: 0
+2023-07-23_17:52:26.517 pid:10129; INFO: [cmd_runner_sub_proc.py:12 -                  <module>() ] Starting cmd_runner_sub_proc: ['cmd_runner_sub_proc.py', '2023-07-23_12:22:26.417821.json']
+2023-07-23_17:52:26.532 pid:10129; INFO: [cmd_runner_sub_proc.py:22 -                  <module>() ] Running cmd: {'timeout': '30', 'cmd_id': '2023-07-23_12:22:26.417821', 'command': 'docker service update --force ee6wn8mev1ti'}
+2023-07-23_17:52:45.868 pid:10129; INFO: [cmd_runner_sub_proc.py:41 -                  <module>() ] Finished cmd_id: 2023-07-23_12:22:26.417821, exit code: 0
+2023-07-23_18:04:00.700 pid:14296; INFO: [cmd_runner_sub_proc.py:12 -                  <module>() ] Starting cmd_runner_sub_proc: ['cmd_runner_sub_proc.py', '2023-07-23_12:34:00.585824.json']
+2023-07-23_18:04:00.709 pid:14296; INFO: [cmd_runner_sub_proc.py:22 -                  <module>() ] Running cmd: {'timeout': '30', 'cmd_id': '2023-07-23_12:34:00.585824', 'command': 'docker service update --force ee6wn8mev1ti'}
+2023-07-23_18:04:22.343 pid:14296; INFO: [cmd_runner_sub_proc.py:41 -                  <module>() ] Finished cmd_id: 2023-07-23_12:34:00.585824, exit code: 0
+2023-07-23_18:14:46.990 pid:16626; INFO: [cmd_runner_sub_proc.py:12 -                  <module>() ] Starting cmd_runner_sub_proc: ['cmd_runner_sub_proc.py', '2023-07-23_18:14:46.887621.json']
+2023-07-23_18:14:46.999 pid:16626; INFO: [cmd_runner_sub_proc.py:22 -                  <module>() ] Running cmd: {'timeout': '30', 'cmd_id': '2023-07-23_18:14:46.887621', 'command': 'free'}
+2023-07-23_18:14:47.011 pid:16626; INFO: [cmd_runner_sub_proc.py:41 -                  <module>() ] Finished cmd_id: 2023-07-23_18:14:46.887621, exit code: 0
+2023-07-23_18:22:41.533 pid:17729; INFO: [cmd_runner_sub_proc.py:12 -                  <module>() ] Starting cmd_runner_sub_proc: ['cmd_runner_sub_proc.py', '2023-07-23_18:22:41.429780.json']
+2023-07-23_18:22:41.542 pid:17729; INFO: [cmd_runner_sub_proc.py:22 -                  <module>() ] Running cmd: {'timeout': '30', 'cmd_id': '2023-07-23_18:22:41.429780', 'command': 'free'}
+2023-07-23_18:22:41.554 pid:17729; INFO: [cmd_runner_sub_proc.py:41 -                  <module>() ] Finished cmd_id: 2023-07-23_18:22:41.429780, exit code: 0
+2023-07-23_18:55:29.582 pid:19617; INFO: [cmd_runner_sub_proc.py:12 -                  <module>() ] Starting cmd_runner_sub_proc: ['cmd_runner_sub_proc.py', '2023-07-23_18:55:29.470505.json']
+2023-07-23_18:55:29.590 pid:19617; INFO: [cmd_runner_sub_proc.py:22 -                  <module>() ] Running cmd: {'timeout': '30', 'cmd_id': '2023-07-23_18:55:29.470505', 'command': 'free'}
+2023-07-23_18:55:29.601 pid:19617; INFO: [cmd_runner_sub_proc.py:41 -                  <module>() ] Finished cmd_id: 2023-07-23_18:55:29.470505, exit code: 0
+2023-07-23_18:56:32.121 pid:19709; INFO: [cmd_runner_sub_proc.py:12 -                  <module>() ] Starting cmd_runner_sub_proc: ['cmd_runner_sub_proc.py', '2023-07-23_18:56:32.020524.json']
+2023-07-23_18:56:32.130 pid:19709; INFO: [cmd_runner_sub_proc.py:22 -                  <module>() ] Running cmd: {'timeout': '30', 'cmd_id': '2023-07-23_18:56:32.020524', 'command': 'free'}
+2023-07-23_18:56:32.142 pid:19709; INFO: [cmd_runner_sub_proc.py:41 -                  <module>() ] Finished cmd_id: 2023-07-23_18:56:32.020524, exit code: 0
+2023-07-23_18:56:33.391 pid:19714; INFO: [cmd_runner_sub_proc.py:12 -                  <module>() ] Starting cmd_runner_sub_proc: ['cmd_runner_sub_proc.py', '2023-07-23_18:56:33.296844.json']
+2023-07-23_18:56:33.400 pid:19714; INFO: [cmd_runner_sub_proc.py:22 -                  <module>() ] Running cmd: {'timeout': '30', 'cmd_id': '2023-07-23_18:56:33.296844', 'command': 'free'}
+2023-07-23_18:56:33.411 pid:19714; INFO: [cmd_runner_sub_proc.py:41 -                  <module>() ] Finished cmd_id: 2023-07-23_18:56:33.296844, exit code: 0
+2023-07-23_18:56:34.409 pid:19719; INFO: [cmd_runner_sub_proc.py:12 -                  <module>() ] Starting cmd_runner_sub_proc: ['cmd_runner_sub_proc.py', '2023-07-23_18:56:34.314172.json']
+2023-07-23_18:56:34.417 pid:19719; INFO: [cmd_runner_sub_proc.py:22 -                  <module>() ] Running cmd: {'timeout': '30', 'cmd_id': '2023-07-23_18:56:34.314172', 'command': 'free'}
+2023-07-23_18:56:34.429 pid:19719; INFO: [cmd_runner_sub_proc.py:41 -                  <module>() ] Finished cmd_id: 2023-07-23_18:56:34.314172, exit code: 0
+2023-07-23_18:56:37.902 pid:19724; INFO: [cmd_runner_sub_proc.py:12 -                  <module>() ] Starting cmd_runner_sub_proc: ['cmd_runner_sub_proc.py', '2023-07-23_18:56:37.807443.json']
+2023-07-23_18:56:37.911 pid:19724; INFO: [cmd_runner_sub_proc.py:22 -                  <module>() ] Running cmd: {'timeout': '30', 'cmd_id': '2023-07-23_18:56:37.807443', 'command': 'free'}
+2023-07-23_18:56:37.922 pid:19724; INFO: [cmd_runner_sub_proc.py:41 -                  <module>() ] Finished cmd_id: 2023-07-23_18:56:37.807443, exit code: 0
+2023-07-23_18:58:25.351 pid:19983; INFO: [cmd_runner_sub_proc.py:12 -                  <module>() ] Starting cmd_runner_sub_proc: ['cmd_runner_sub_proc.py', '2023-07-23_18:58:25.249065.json']
+2023-07-23_18:58:25.360 pid:19983; INFO: [cmd_runner_sub_proc.py:22 -                  <module>() ] Running cmd: {'timeout': '30', 'cmd_id': '2023-07-23_18:58:25.249065', 'command': 'free'}
+2023-07-23_18:58:25.372 pid:19983; INFO: [cmd_runner_sub_proc.py:41 -                  <module>() ] Finished cmd_id: 2023-07-23_18:58:25.249065, exit code: 0
