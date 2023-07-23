@@ -6,3 +6,13 @@ csv/*
 db/*
 yfinance.cache
 drive_md.sqlite.db
+ft/cmd_runner/output
+ft/cmd_runner/todo
+ft/token.json
+ft/token.txt
+ft/md
+ft/tel_bot_trade_notif.token.txt
+ft/nohup.out
+ft/node_modules
+ft/*.jpeg
+ft/logs

@@ -1,1 +1,1 @@
-{"cmd_id": "xxx","timeout": "7","command": "echo \"`date` start\" ; sleep 5 ; echo \"`date` end\""}
+{"cmd_id": "xxx","timeout": "3","command": "echo \"`date` start\" ; sleep 5 ; echo \"`date` end\""}

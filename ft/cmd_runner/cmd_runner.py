@@ -9,7 +9,7 @@ import sys
 logging.basicConfig(
     level=logging.DEBUG,
     stream=sys.stdout,
-    format="%(asctime)s pid:%(process)d; %(levelname)s: [%(filename)s:%(lineno)s - %(funcName)25s() ] %(message)s",
+    format="%(asctime)s.%(msecs)03d pid:%(process)d; %(levelname)s: [%(filename)s:%(lineno)s - %(funcName)25s() ] %(message)s",
     datefmt="%Y-%m-%d_%H:%M:%S",
 )
 logging.info("Starting cmd_runner")

@@ -82,3 +82,12 @@ services:
      - kanboard_ssl:/etc/nginx/ssl
     environment:
       - PLUGIN_INSTALLER=true
+
+  telegram_cmd_rcvr:
+          image: telegram_cmd_rcvr:0.0.1 
+    container_name: telegram_cmd_rcvr
+    volumes:
+            - /home/invaeg_bm_1/git_repos/python_playground/ft/:/app
+    restart: unless-stopped
+
+

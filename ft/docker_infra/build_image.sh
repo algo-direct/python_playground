@@ -19,4 +19,9 @@ export flat_trade_token_generator_latest_tag=0.0.1
 sudo docker build  --progress=plain   --build-arg base_python_latest_tag=$base_python_latest_tag --tag flat_trade_token_generator:$flat_trade_token_generator_latest_tag  . 2>&1 | tee -a $log_file
 cd -
 
+cd telegram_cmd_rcvr 
+export telegram_cmd_rcvr_latest_tag=0.0.1
+sudo docker build  --progress=plain   --build-arg flat_trade_token_generator_latest_tag=$flat_trade_token_generator_latest_tag --tag telegram_cmd_rcvr:$telegram_cmd_rcvr_latest_tag  . 2>&1 | tee -a $log_file
+cd -
+
 echo "***** logs at $log_file"

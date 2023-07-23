@@ -19,6 +19,9 @@ RUN npm --global --loglevel info install pino
 RUN npm --global --loglevel info install pino-pretty 
 RUN npm --global --loglevel info install moment 
 RUN pip3 install asyncio
-RUN pip3 install telegram
+RUN pip3 install telethon
+RUN pip3 install python-telegram-bot 
+#RUN pip3 install python-telegram
+#telegram
 #RUN pip3 install 
 #RUN pip3 install 
