@@ -91,8 +91,25 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -lrt'
+
 alias vb='vim ~/.bashrc'
 alias sb='source ~/.bashrc'
+
+alias l='ls -lrt'
+alias v='vim'
+alias vb='vim ~/.bashrc'
+alias sb='source ~/.bashrc'
+
+alias glg="git log --pretty=format:'%C(yellow)%h %C(cyan)%ad %Cgreen%d %Creset%s' --date=relative -n10"
+alias gbr="git branch"
+alias gt="git status"
+alias gcbr="git rev-parse --abbrev-ref HEAD"
+function gpobr() {
+    git push origin `gcbr`
+}
+alias gadd="git add -v "
+
+alias activate_venv="source env/bin/activate"
 
 
 # Add an "alert" alias for long running commands.  Use like so:
