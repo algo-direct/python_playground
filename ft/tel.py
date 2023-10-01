@@ -7,6 +7,7 @@ import asyncio
 import uuid
 import json
 import os
+import subprocess 
 import threading
 from telegram import Update
 from telegram.ext import Updater, ApplicationBuilder, ContextTypes, CommandHandler
@@ -37,6 +38,10 @@ def now_to_str():
 
 
 logging.info(f"start {now_to_str()}")
+p = subprocess.Popen(
+                [sys.executable, "tel.send.py", "bot starting"],
+            )
+logging.info(f"Started tel.send.py pid: {p.pid}")
 
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -171,11 +176,11 @@ async def run_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 if __name__ == "__main__":
-    # application = ApplicationBuilder().token('5809560751:AAFiEn1Ti6z2v00Lecydny1SNS_owLVYBB4').build()
+    # application = ApplicationBuilder().token(token).build()
     # asyncio.run(application.bot.sendMessage(chat_id='5499947057', text='Hello there! ' + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
     # sys.exit(0)
     # pass
-    # updater = Updater('5809560751:AAFiEn1Ti6z2v00Lecydny1SNS_owLVYBB4', use_context=False)
+    # updater = Updater(token, use_context=False)
     # updater.dispatcher.bot.sendMessage(chat_id='5499947057', text='Hello there!')
     # pass
 

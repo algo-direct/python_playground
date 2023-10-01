@@ -1,4 +1,5 @@
 .ipynb_checkpoints
+*.log
 env/*
 logs/*
 data/*
@@ -8,9 +9,12 @@ yfinance.cache
 drive_md.sqlite.db
 ft/cmd_runner/output
 ft/cmd_runner/todo
+ft/cmd_runner/bin
+ft/cmd_runner/*.log
 ft/token.json
 ft/token.txt
 ft/md
+ft/up.txt
 ft/tel_bot_trade_notif.token.txt
 ft/nohup.out
 ft/node_modules
