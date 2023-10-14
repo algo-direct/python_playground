@@ -82,6 +82,7 @@ function reconnect() {
 const nseTOP100 = "NSE|13#NSE|22#NSE|25#NSE|3563#NSE|15083#NSE|6066#NSE|10217#NSE|8110#NSE|1270#NSE|157#NSE|236#NSE|19913#NSE|5900#NSE|16669#NSE|317#NSE|16675#NSE|305#NSE|4668#NSE|404#NSE|383#NSE|526#NSE|10604#NSE|2181#NSE|547#NSE|10794#NSE|685#NSE|694#NSE|20374#NSE|15141#NSE|14732#NSE|772#NSE|10940#NSE|881#NSE|910#NSE|6545#NSE|4717#NSE|10099#NSE|1232#NSE|7229#NSE|4244#NSE|1333#NSE|467#NSE|9819#NSE|1348#NSE|1363#NSE|2303#NSE|1394#NSE|1330#NSE|4963#NSE|21770#NSE|18652#NSE|1660#NSE|1624#NSE|13611#NSE|29135#NSE|5258#NSE|13751#NSE|1594#NSE|11195#NSE|11723#NSE|1922#NSE|17818#NSE|11483#NSE|9480#NSE|2031#NSE|4067#NSE|10999#NSE|23650#NSE|11630#NSE|17963#NSE|2475#NSE|24184#NSE|14413#NSE|2664#NSE|14977#NSE|2535#NSE|2885#NSE|17971#NSE|21808#NSE|3273#NSE|4204#NSE|3103#NSE|3150#NSE|3045#NSE|3351#NSE|11536#NSE|3432#NSE|3456#NSE|3426#NSE|3499#NSE|13538#NSE|3506#NSE|3518#NSE|11287#NSE|11532#NSE|10447#NSE|18921#NSE|3063#NSE|3787#NSE|5097"
 
 function processShutdown() {
+	logger.info("Shutting down")
 	md_file_stream.end();
 	process.exit(0);
 }
@@ -106,14 +107,24 @@ function handleErrorAndDisconnect(error) {
 	logger.info("#######################################################################################################################")
 }
 
-function handleNextEvent(connection, msgstr) {
-	logger.info(`state: ${ctx.state}, c:${!!connection}, m: ${!!msgstr}`)
-	if (shuttingDown) { return; }
+function shutdownIfNeeded(repeatTimer) {
+	// if (shuttingDown) { return true; }
+	if (repeatTimer) {
+		setTimeout(shutdownIfNeeded, reconnectInterval * 100);
+	}
 	if (shouldShutdown()) {
 		shuttingDown = true;
 		setTimeout(processShutdown, reconnectInterval);
-		return;
+		return true;
 	}
+	return false;
+}
+
+function handleNextEvent(connection, msgstr) {
+	logger.info(`state: ${ctx.state}, c:${!!connection}, m: ${!!msgstr} shuttingDown:${!!shuttingDown}`)
+	if (shuttingDown) { return; }
+	if (shutdownIfNeeded()) { return; }
+
 	if (ctx.state === stateType.init) {
 		const url = "wss://piconnect.flattrade.in/PiConnectWSTp/"
 		let client = new WebSocketClient();
@@ -255,3 +266,4 @@ function registerCB(client) {
 }
 
 setTimeout(handleNextEvent, reconnectInterval);
+setTimeout(shutdownIfNeeded, reconnectInterval);
